@@ -1,0 +1,403 @@
+{
+  "updatedAt": "2026-06-03",
+  "events": [
+    {
+      "id": "taipei-marathon-2026",
+      "type": "run",
+      "name": "台北馬拉松",
+      "city": "台北市",
+      "place": "台北市政府周邊",
+      "date": "2026-12-20",
+      "distances": [
+        42.195,
+        21.0975
+      ],
+      "status": "待公告",
+      "url": "https://www.taipeicitymarathon.com/"
+    },
+    {
+      "id": "wanjinshi-2027",
+      "type": "run",
+      "name": "新北市萬金石馬拉松",
+      "city": "新北市",
+      "place": "萬里 / 金山 / 石門",
+      "date": "2027-03-21",
+      "distances": [
+        42.195,
+        10
+      ],
+      "status": "待公告",
+      "url": "https://wanjinshi-marathon.com.tw/"
+    },
+    {
+      "id": "kaohsiung-marathon-2027",
+      "type": "run",
+      "name": "高雄富邦馬拉松",
+      "city": "高雄市",
+      "place": "高雄市區",
+      "date": "2027-01-10",
+      "distances": [
+        42.195,
+        21.0975,
+        10,
+        5
+      ],
+      "status": "待公告",
+      "url": "https://www.khm.com.tw/"
+    },
+    {
+      "id": "tainan-ancient-capital-2027",
+      "type": "run",
+      "name": "臺南古都國際半程馬拉松",
+      "city": "台南市",
+      "place": "台南市政府 / 安平",
+      "date": "2027-03-07",
+      "distances": [
+        21.0975,
+        10,
+        5
+      ],
+      "status": "待公告",
+      "url": "https://www.sportsnet.org.tw/"
+    },
+    {
+      "id": "taichung-city-marathon-2026",
+      "type": "run",
+      "name": "臺中國際馬拉松",
+      "city": "台中市",
+      "place": "台中市區",
+      "date": "2026-11-01",
+      "distances": [
+        42.195,
+        21.0975,
+        10
+      ],
+      "status": "待公告",
+      "url": "https://www.ibodygo.com.tw/"
+    },
+    {
+      "id": "sun-moon-lake-marathon-2026",
+      "type": "run",
+      "name": "日月潭環湖馬拉松",
+      "city": "南投縣",
+      "place": "日月潭",
+      "date": "2026-10-25",
+      "distances": [
+        42.195,
+        29,
+        12
+      ],
+      "status": "待公告",
+      "url": "https://www.sunmoonlakemarathon.com/"
+    },
+    {
+      "id": "taroko-gorge-marathon-2026",
+      "type": "run",
+      "name": "太魯閣峽谷馬拉松",
+      "city": "花蓮縣",
+      "place": "太魯閣國家公園",
+      "date": "2026-11-07",
+      "distances": [
+        42.195,
+        21.0975,
+        12
+      ],
+      "status": "待公告",
+      "url": "https://www.taroko-marathon.com.tw/"
+    },
+    {
+      "id": "kinmen-marathon-2027",
+      "type": "run",
+      "name": "金門馬拉松",
+      "city": "金門縣",
+      "place": "金門縣立體育場",
+      "date": "2027-01-17",
+      "distances": [
+        42.195,
+        21.0975,
+        11.2,
+        5
+      ],
+      "status": "待公告",
+      "url": "https://kinmenmarathon.com/"
+    },
+    {
+      "id": "penghu-cross-sea-2026",
+      "type": "run",
+      "name": "澎湖跨海馬拉松",
+      "city": "澎湖縣",
+      "place": "西嶼 / 馬公",
+      "date": "2026-11-15",
+      "distances": [
+        42.195,
+        21.0975,
+        11,
+        5
+      ],
+      "status": "待公告",
+      "url": "https://www.penghu-nsa.gov.tw/"
+    },
+    {
+      "id": "eva-air-run-2026",
+      "type": "run",
+      "name": "長榮航空城市觀光半程馬拉松",
+      "city": "台北市",
+      "place": "總統府前廣場周邊",
+      "date": "2026-10-25",
+      "distances": [
+        21.0975,
+        10,
+        3
+      ],
+      "status": "待公告",
+      "url": "https://evaairrun.com/"
+    },
+    {
+      "id": "taipei-freeway-marathon-2026",
+      "type": "run",
+      "name": "南山人壽臺北國道馬拉松",
+      "city": "台北市",
+      "place": "中山高速公路五股至汐止高架段",
+      "date": "2026-03-08",
+      "distances": [
+        42.195,
+        21.0975
+      ],
+      "status": "待公告",
+      "url": "https://www.taipeifreewaymarathon.com/pages.php?id=2"
+    },
+    {
+      "id": "ns-run-half-marathon-2026",
+      "type": "run",
+      "name": "NS RUN 南山人壽半程馬拉松",
+      "city": "台北市",
+      "place": "總統府至大佳河濱公園",
+      "date": "2026-11-22",
+      "distances": [
+        21.0975,
+        10,
+        3
+      ],
+      "status": "報名中",
+      "url": "https://www.nanshanrun.com/rules-and-regulations.html"
+    },
+    {
+      "id": "tour-de-taiwan-2027",
+      "type": "bike",
+      "name": "國際自由車環台公路大賽",
+      "city": "全台灣",
+      "place": "多站城市路線",
+      "date": "2027-03-14",
+      "distances": [
+        600
+      ],
+      "status": "待公告",
+      "url": "https://www.tourdetaiwan.org.tw/"
+    },
+    {
+      "id": "taiwan-kom-2026",
+      "type": "bike",
+      "name": "臺灣自行車登山王挑戰",
+      "city": "花蓮縣",
+      "place": "七星潭至武嶺",
+      "date": "2026-10-30",
+      "distances": [
+        105
+      ],
+      "status": "待公告",
+      "url": "https://www.taiwankom.org/"
+    },
+    {
+      "id": "taiwan-kom-summer-2026",
+      "type": "bike",
+      "name": "夏季武嶺挑戰",
+      "city": "南投縣",
+      "place": "埔里至武嶺",
+      "date": "2026-06-28",
+      "distances": [
+        55
+      ],
+      "status": "待公告",
+      "url": "https://www.cyclist.org.tw/"
+    },
+    {
+      "id": "sun-moon-lake-bike-2026",
+      "type": "bike",
+      "name": "日月潭 Come! Bikeday",
+      "city": "南投縣",
+      "place": "日月潭環湖",
+      "date": "2026-11-08",
+      "distances": [
+        30,
+        60,
+        90
+      ],
+      "status": "待公告",
+      "url": "https://www.sunmoonlake.gov.tw/"
+    },
+    {
+      "id": "formosa-900-2026",
+      "type": "bike",
+      "name": "臺灣自行車節 Formosa 900",
+      "city": "全台灣",
+      "place": "環島路線",
+      "date": "2026-11-07",
+      "distances": [
+        900
+      ],
+      "status": "即將開放",
+      "url": "https://taiwanbike.tw/"
+    },
+    {
+      "id": "taipei-riverside-bike-2026",
+      "type": "bike",
+      "name": "台北河濱自行車挑戰",
+      "city": "台北市",
+      "place": "河濱自行車道",
+      "date": "2026-09-13",
+      "distances": [
+        25,
+        50,
+        100
+      ],
+      "status": "待公告",
+      "url": "https://www.travel.taipei/"
+    },
+    {
+      "id": "hualien-east-coast-bike-2026",
+      "type": "bike",
+      "name": "花東海岸公路自行車挑戰",
+      "city": "花蓮縣",
+      "place": "花蓮至台東海岸線",
+      "date": "2026-09-27",
+      "distances": [
+        120,
+        200
+      ],
+      "status": "待公告",
+      "url": "https://www.eastcoast-nsa.gov.tw/"
+    },
+    {
+      "id": "taiwan-cycling-festival-2026",
+      "type": "bike",
+      "name": "騎遇福爾摩沙系列活動",
+      "city": "全台灣",
+      "place": "各縣市自行車路線",
+      "date": "2026-10-10",
+      "distances": [
+        20,
+        50,
+        100
+      ],
+      "status": "待公告",
+      "url": "https://taiwanbike.tw/"
+    },
+    {
+      "id": "yangmingshan-king-2026",
+      "type": "bike",
+      "name": "陽明山王公路車挑戰",
+      "city": "台北市",
+      "place": "陽明山",
+      "date": "2026-07-19",
+      "distances": [
+        35,
+        70
+      ],
+      "status": "待公告",
+      "url": "https://www.cyclist.org.tw/"
+    },
+    {
+      "id": "taichung-bike-classic-2026",
+      "type": "bike",
+      "name": "台中經典百K自行車挑戰",
+      "city": "台中市",
+      "place": "后里 / 東勢 / 新社",
+      "date": "2026-10-04",
+      "distances": [
+        50,
+        100
+      ],
+      "status": "待公告",
+      "url": "https://www.cyclist.org.tw/"
+    },
+    {
+      "id": "tba-north-south-360-2026",
+      "type": "bike",
+      "name": "2026 TBA北高360",
+      "city": "新北市 / 高雄市",
+      "place": "八里廖添丁廟至高雄左營屏山國小",
+      "date": "2026-11-13",
+      "distances": [
+        360
+      ],
+      "status": "報名中",
+      "url": "https://www.runbase.tw/blogs/road-run/tba360"
+    },
+    {
+      "id": "twb-north-south-360-2026",
+      "type": "bike",
+      "name": "第13屆 2026 TWB 北高360",
+      "city": "新北市 / 高雄市",
+      "place": "北台灣至高雄長距離路線",
+      "date": "2026-11-06",
+      "distances": [
+        360
+      ],
+      "status": "待公告",
+      "url": "https://twbike.org/news/?act=data&id=372"
+    },
+    {
+      "id": "twb-east-towers-2026",
+      "type": "bike",
+      "name": "2026 TWB 東三塔 / 東雙塔",
+      "city": "新北市 / 台東縣 / 屏東縣",
+      "place": "富貴角楓林大橋起點，東部雙塔 / 三塔路線",
+      "date": "2026-01-17",
+      "distances": [
+        550,
+        300
+      ],
+      "status": "待公告",
+      "url": "https://twbike.org/news/index.php?act=data&id=376"
+    },
+    {
+      "id": "96heroes-wuling-challenge-2026",
+      "type": "bike",
+      "name": "2026 96Heroes 中華賓士・武嶺站｜挑戰組",
+      "city": "南投縣",
+      "place": "埔里地理中心碑至武嶺牌樓",
+      "date": "2026-09-07",
+      "distances": [
+        53
+      ],
+      "status": "報名中",
+      "url": "https://www.96sporter.com/event_detail121.htm"
+    },
+    {
+      "id": "96-league-wuling-race-2026",
+      "type": "bike",
+      "name": "2026 96聯賽 武嶺站｜市民競賽組",
+      "city": "南投縣",
+      "place": "埔里地理中心碑至武嶺牌樓",
+      "date": "2026-09-07",
+      "distances": [
+        53
+      ],
+      "status": "報名中",
+      "url": "https://www.96sporter.com/event_detail124.htm"
+    },
+    {
+      "id": "neverstop-tataka-2026",
+      "type": "bike",
+      "name": "2026 NeverStop 永不放棄-塔塔加探索新中橫",
+      "city": "南投縣",
+      "place": "水裡商工至東埔山停車場",
+      "date": "2026-05-24",
+      "distances": [
+        80
+      ],
+      "status": "已結束",
+      "url": "https://eventgo.tw/event/ea2bff89-7098-4323-bce2-77cbd2c836f9"
+    }
+  ]
+}

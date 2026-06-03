@@ -161,6 +161,13 @@
       text-align: left;
     }
 
+    .update-status {
+      color: #c6d4cf;
+      font-size: 12px;
+      line-height: 1.55;
+      min-height: 18px;
+    }
+
     main {
       padding: 28px clamp(18px, 4vw, 44px) 40px;
       min-width: 0;
@@ -282,6 +289,35 @@
       font-weight: 800;
     }
 
+    .month-lookup {
+      align-items: center;
+      background: var(--panel);
+      border: 1px solid var(--line);
+      border-radius: 8px;
+      padding: 10px;
+      box-shadow: 0 8px 20px rgba(24, 33, 31, 0.05);
+    }
+
+    .month-lookup label {
+      color: var(--muted);
+      font-size: 13px;
+      font-weight: 800;
+    }
+
+    .month-lookup input {
+      width: 130px;
+      height: 38px;
+      border: 1px solid var(--line);
+      border-radius: 8px;
+      padding: 0 11px;
+    }
+
+    .month-lookup button {
+      border-radius: 8px;
+      min-height: 38px;
+      padding: 0 12px;
+    }
+
     .layout {
       display: grid;
       grid-template-columns: minmax(0, 1fr) 330px;
@@ -365,6 +401,9 @@
     .pill.open { background: #f8ecd8; color: #8a4a00; }
     .pill.soon { background: #f4e4df; color: #8f3327; }
     .pill.info { background: #eceff2; color: #45515c; }
+    .deadline-closed { color: var(--red); font-weight: 900; }
+    .deadline-open { color: var(--green-dark); font-weight: 800; }
+    .deadline-unknown { color: var(--muted); }
 
     .distance-list {
       display: flex;
@@ -488,6 +527,12 @@
       padding: 10px;
       color: var(--ink);
       min-width: 0;
+    }
+
+    .field-hint {
+      color: var(--muted);
+      font-size: 12px;
+      line-height: 1.4;
     }
 
     .form-grid textarea {
@@ -622,6 +667,14 @@
           <select id="monthFilter"></select>
         </div>
         <div class="filter-group">
+          <label for="startDateFilter">日期起</label>
+          <input id="startDateFilter" inputmode="numeric" placeholder="YYYY-MM-DD">
+        </div>
+        <div class="filter-group">
+          <label for="endDateFilter">日期迄</label>
+          <input id="endDateFilter" inputmode="numeric" placeholder="YYYY-MM-DD">
+        </div>
+        <div class="filter-group">
           <label for="distanceFilter">距離</label>
           <select id="distanceFilter">
             <option value="all">全部距離</option>
@@ -638,14 +691,18 @@
             <option value="報名中">報名中</option>
             <option value="即將開放">即將開放</option>
             <option value="待公告">待公告</option>
+            <option value="已結束">已結束</option>
+            <option value="報名截止">報名截止</option>
           </select>
           <label class="check-row"><input id="savedOnly" type="checkbox">只看已加入行程</label>
         </div>
       </div>
 
       <div class="side-actions">
+        <button id="updateEventsBtn">更新賽事資料</button>
         <button id="resetBtn">重設篩選</button>
         <button id="exportBtn">匯出我的行程 CSV</button>
+        <div class="update-status" id="updateStatus"></div>
       </div>
     </aside>
 
@@ -676,19 +733,26 @@
         <button class="primary-btn" id="addBtn">新增賽事</button>
       </div>
 
-      <div class="tabs" id="monthTabs"></div>
+      <div class="tabs month-lookup" id="monthLookup">
+        <label for="quickMonthInput">月份快查</label>
+        <input id="quickMonthInput" inputmode="numeric" pattern="\d{4}-\d{2}" placeholder="YYYY-MM">
+        <button id="applyMonthBtn" type="button">查詢</button>
+        <button id="clearMonthBtn" type="button">清除</button>
+        <span class="field-hint">格式：YYYY-MM，例如 2026-11</span>
+      </div>
 
       <section class="layout">
         <div class="table-wrap">
           <table>
             <thead>
               <tr>
-                <th style="width: 32%">賽事名稱</th>
-                <th style="width: 14%">類型</th>
-                <th style="width: 17%">地點</th>
-                <th style="width: 14%">時間</th>
-                <th style="width: 15%">公里數</th>
-                <th style="width: 8%">行程</th>
+                <th style="width: 28%">賽事名稱</th>
+                <th style="width: 13%">類型</th>
+                <th style="width: 16%">地點</th>
+                <th style="width: 13%">時間</th>
+                <th style="width: 13%">報名期限</th>
+                <th style="width: 11%">公里數</th>
+                <th style="width: 6%">行程</th>
               </tr>
             </thead>
             <tbody id="eventRows"></tbody>
@@ -713,20 +777,21 @@
     <form method="dialog" id="eventForm">
       <div class="modal-head">
         <h3>新增賽事</h3>
-        <button class="icon-btn" value="cancel" aria-label="關閉">×</button>
+        <button class="icon-btn" id="closeDialogBtn" type="button" aria-label="關閉">×</button>
       </div>
       <div class="form-grid">
         <label>賽事名稱<input id="newName" required></label>
         <label>類型<select id="newType"><option value="run">路跑</option><option value="bike">單車</option></select></label>
         <label>縣市<input id="newCity" required placeholder="例如：台北市"></label>
         <label>地點<input id="newPlace" required placeholder="例如：市民廣場"></label>
-        <label>日期<input id="newDate" type="date" required></label>
+        <label>日期<input id="newDate" inputmode="numeric" pattern="\d{4}-\d{2}-\d{2}" placeholder="例如：2026-11-22" required><span class="field-hint">格式：西元年-月-日，例如 2026-11-22</span></label>
+        <label>報名期限<input id="newDeadline" inputmode="numeric" pattern="\d{4}-\d{2}-\d{2}" placeholder="例如：2026-10-31"><span class="field-hint">可空白；格式：YYYY-MM-DD</span></label>
         <label>狀態<select id="newStatus"><option>報名中</option><option>即將開放</option><option>待公告</option></select></label>
         <label class="span-2">公里數<textarea id="newDistances" required placeholder="用逗號分隔，例如：42.195, 21, 10"></textarea></label>
         <label class="span-2">來源連結<input id="newUrl" type="url" placeholder="https://"></label>
       </div>
       <div class="modal-actions">
-        <button class="ghost-btn" value="cancel">取消</button>
+        <button class="ghost-btn" id="cancelDialogBtn" type="button">取消</button>
         <button class="primary-btn" value="default">加入</button>
       </div>
     </form>
@@ -744,6 +809,8 @@
       { id: "kinmen-marathon-2027", type: "run", name: "金門馬拉松", city: "金門縣", place: "金門縣立體育場", date: "2027-01-17", distances: [42.195, 21.0975, 11.2, 5], status: "待公告", url: "https://kinmenmarathon.com/" },
       { id: "penghu-cross-sea-2026", type: "run", name: "澎湖跨海馬拉松", city: "澎湖縣", place: "西嶼 / 馬公", date: "2026-11-15", distances: [42.195, 21.0975, 11, 5], status: "待公告", url: "https://www.penghu-nsa.gov.tw/" },
       { id: "eva-air-run-2026", type: "run", name: "長榮航空城市觀光半程馬拉松", city: "台北市", place: "總統府前廣場周邊", date: "2026-10-25", distances: [21.0975, 10, 3], status: "待公告", url: "https://evaairrun.com/" },
+      { id: "taipei-freeway-marathon-2026", type: "run", name: "南山人壽臺北國道馬拉松", city: "台北市", place: "中山高速公路五股至汐止高架段", date: "2026-03-08", distances: [42.195, 21.0975], status: "待公告", url: "https://www.taipeifreewaymarathon.com/pages.php?id=2" },
+      { id: "ns-run-half-marathon-2026", type: "run", name: "NS RUN 南山人壽半程馬拉松", city: "台北市", place: "總統府至大佳河濱公園", date: "2026-11-22", distances: [21.0975, 10, 3], status: "報名中", url: "https://www.nanshanrun.com/rules-and-regulations.html" },
       { id: "tour-de-taiwan-2027", type: "bike", name: "國際自由車環台公路大賽", city: "全台灣", place: "多站城市路線", date: "2027-03-14", distances: [600], status: "待公告", url: "https://www.tourdetaiwan.org.tw/" },
       { id: "taiwan-kom-2026", type: "bike", name: "臺灣自行車登山王挑戰", city: "花蓮縣", place: "七星潭至武嶺", date: "2026-10-30", distances: [105], status: "待公告", url: "https://www.taiwankom.org/" },
       { id: "taiwan-kom-summer-2026", type: "bike", name: "夏季武嶺挑戰", city: "南投縣", place: "埔里至武嶺", date: "2026-06-28", distances: [55], status: "待公告", url: "https://www.cyclist.org.tw/" },
@@ -753,25 +820,47 @@
       { id: "hualien-east-coast-bike-2026", type: "bike", name: "花東海岸公路自行車挑戰", city: "花蓮縣", place: "花蓮至台東海岸線", date: "2026-09-27", distances: [120, 200], status: "待公告", url: "https://www.eastcoast-nsa.gov.tw/" },
       { id: "taiwan-cycling-festival-2026", type: "bike", name: "騎遇福爾摩沙系列活動", city: "全台灣", place: "各縣市自行車路線", date: "2026-10-10", distances: [20, 50, 100], status: "待公告", url: "https://taiwanbike.tw/" },
       { id: "yangmingshan-king-2026", type: "bike", name: "陽明山王公路車挑戰", city: "台北市", place: "陽明山", date: "2026-07-19", distances: [35, 70], status: "待公告", url: "https://www.cyclist.org.tw/" },
-      { id: "taichung-bike-classic-2026", type: "bike", name: "台中經典百K自行車挑戰", city: "台中市", place: "后里 / 東勢 / 新社", date: "2026-10-04", distances: [50, 100], status: "待公告", url: "https://www.cyclist.org.tw/" }
+      { id: "taichung-bike-classic-2026", type: "bike", name: "台中經典百K自行車挑戰", city: "台中市", place: "后里 / 東勢 / 新社", date: "2026-10-04", distances: [50, 100], status: "待公告", url: "https://www.cyclist.org.tw/" },
+      { id: "tba-north-south-360-2026", type: "bike", name: "2026 TBA北高360", city: "新北市 / 高雄市", place: "八里廖添丁廟至高雄左營屏山國小", date: "2026-11-13", distances: [360], status: "報名中", url: "https://www.runbase.tw/blogs/road-run/tba360" },
+      { id: "twb-north-south-360-2026", type: "bike", name: "第13屆 2026 TWB 北高360", city: "新北市 / 高雄市", place: "北台灣至高雄長距離路線", date: "2026-11-06", distances: [360], status: "待公告", url: "https://twbike.org/news/?act=data&id=372" },
+      { id: "twb-east-towers-2026", type: "bike", name: "2026 TWB 東三塔 / 東雙塔", city: "新北市 / 台東縣 / 屏東縣", place: "富貴角楓林大橋起點，東部雙塔 / 三塔路線", date: "2026-01-17", distances: [550, 300], status: "待公告", url: "https://twbike.org/news/index.php?act=data&id=376" },
+      { id: "96heroes-wuling-challenge-2026", type: "bike", name: "2026 96Heroes 中華賓士・武嶺站｜挑戰組", city: "南投縣", place: "埔里地理中心碑至武嶺牌樓", date: "2026-09-07", distances: [53], status: "報名中", url: "https://www.96sporter.com/event_detail121.htm" },
+      { id: "96-league-wuling-race-2026", type: "bike", name: "2026 96聯賽 武嶺站｜市民競賽組", city: "南投縣", place: "埔里地理中心碑至武嶺牌樓", date: "2026-09-07", distances: [53], status: "報名中", url: "https://www.96sporter.com/event_detail124.htm" },
+      { id: "neverstop-tataka-2026", type: "bike", name: "2026 NeverStop 永不放棄-塔塔加探索新中橫", city: "南投縣", place: "水裡商工至東埔山停車場", date: "2026-05-24", distances: [80], status: "已結束", url: "https://eventgo.tw/event/ea2bff89-7098-4323-bce2-77cbd2c836f9" }
     ];
 
+    const registrationDeadlines = {
+      "taipei-freeway-marathon-2026": "2026-02-15",
+      "ns-run-half-marathon-2026": "2026-10-15",
+      "tba-north-south-360-2026": "2026-10-31",
+      "twb-north-south-360-2026": "2026-10-20",
+      "twb-east-towers-2026": "2025-12-31",
+      "96heroes-wuling-challenge-2026": "2026-08-15",
+      "96-league-wuling-race-2026": "2026-08-15",
+      "neverstop-tataka-2026": "2026-05-10"
+    };
+
     const customEvents = JSON.parse(localStorage.getItem("customEvents") || "[]");
-    let events = [...baseEvents, ...customEvents];
+    let events = [...baseEvents, ...customEvents].map(withEventDefaults);
     let activeType = "all";
-    let activeMonthTab = "all";
     const saved = new Set(JSON.parse(localStorage.getItem("savedRaceIds") || "[]"));
 
     const cityFilter = document.querySelector("#cityFilter");
     const monthFilter = document.querySelector("#monthFilter");
+    const startDateFilter = document.querySelector("#startDateFilter");
+    const endDateFilter = document.querySelector("#endDateFilter");
     const distanceFilter = document.querySelector("#distanceFilter");
     const statusFilter = document.querySelector("#statusFilter");
     const searchInput = document.querySelector("#searchInput");
     const sortSelect = document.querySelector("#sortSelect");
     const savedOnly = document.querySelector("#savedOnly");
+    const updateEventsBtn = document.querySelector("#updateEventsBtn");
+    const updateStatus = document.querySelector("#updateStatus");
     const eventRows = document.querySelector("#eventRows");
     const emptyState = document.querySelector("#emptyState");
-    const monthTabs = document.querySelector("#monthTabs");
+    const quickMonthInput = document.querySelector("#quickMonthInput");
+    const applyMonthBtn = document.querySelector("#applyMonthBtn");
+    const clearMonthBtn = document.querySelector("#clearMonthBtn");
     const savedList = document.querySelector("#savedList");
     const dialog = document.querySelector("#eventDialog");
     const form = document.querySelector("#eventForm");
@@ -799,6 +888,86 @@
       return event.date.slice(0, 7);
     }
 
+    function isValidDateKey(value) {
+      if (!/^\d{4}-\d{2}-\d{2}$/.test(value)) return false;
+      const [year, month, day] = value.split("-").map(Number);
+      const date = new Date(`${value}T00:00:00`);
+      return date.getFullYear() === year && date.getMonth() + 1 === month && date.getDate() === day;
+    }
+
+    function todayKey() {
+      const today = new Date();
+      return `${today.getFullYear()}-${String(today.getMonth() + 1).padStart(2, "0")}-${String(today.getDate()).padStart(2, "0")}`;
+    }
+
+    function withEventDefaults(event) {
+      return {
+        ...event,
+        registrationDeadline: event.registrationDeadline || registrationDeadlines[event.id] || ""
+      };
+    }
+
+    function normalizeExternalEvents(payload) {
+      const incoming = Array.isArray(payload) ? payload : payload.events;
+      if (!Array.isArray(incoming)) return [];
+      return incoming
+        .filter(event => event && event.id && event.name && event.type && event.city && event.place && isValidDateKey(event.date) && Array.isArray(event.distances))
+        .map(event => ({
+          ...event,
+          distances: event.distances.map(Number).filter(Boolean),
+          status: event.status || "待公告",
+          url: event.url || "#"
+        }));
+    }
+
+    async function updateEventsFromJson() {
+      updateEventsBtn.disabled = true;
+      updateStatus.textContent = "正在讀取 events.json...";
+      try {
+        const response = await fetch(`events.json?ts=${Date.now()}`, { cache: "no-store" });
+        if (!response.ok) throw new Error("找不到 events.json");
+        const payload = await response.json();
+        const remoteEvents = normalizeExternalEvents(payload);
+        if (!remoteEvents.length) throw new Error("events.json 沒有有效賽事資料");
+        events = [...remoteEvents, ...customEvents].map(withEventDefaults);
+        initializeFilters();
+        render();
+        const updatedAt = payload.updatedAt ? `，資料日期 ${payload.updatedAt}` : "";
+        updateStatus.textContent = `已更新 ${remoteEvents.length} 筆賽事${updatedAt}`;
+      } catch (error) {
+        updateStatus.textContent = `${error.message}。目前沿用內建資料。`;
+      } finally {
+        updateEventsBtn.disabled = false;
+      }
+    }
+
+    function isRegistrationClosed(event) {
+      return isValidDateKey(event.registrationDeadline) && event.registrationDeadline < todayKey();
+    }
+
+    function effectiveStatus(event) {
+      return isRegistrationClosed(event) ? "報名截止" : event.status;
+    }
+
+    function renderDeadline(event) {
+      if (!event.registrationDeadline) return `<span class="deadline-unknown">待公告</span>`;
+      if (isRegistrationClosed(event)) return `<span class="deadline-closed">${event.registrationDeadline}<br>報名截止</span>`;
+      return `<span class="deadline-open">${event.registrationDeadline}</span>`;
+    }
+
+    function monthKey(date) {
+      return `${date.getFullYear()}-${String(date.getMonth() + 1).padStart(2, "0")}`;
+    }
+
+    function upcomingMonthKeys(count = 12) {
+      const today = new Date();
+      const start = new Date(today.getFullYear(), today.getMonth(), 1);
+      return Array.from({ length: count }, (_, index) => {
+        const month = new Date(start.getFullYear(), start.getMonth() + index, 1);
+        return monthKey(month);
+      });
+    }
+
     function initializeFilters() {
       const cities = ["全部縣市", ...new Set(events.map(event => event.city))];
       cityFilter.innerHTML = cities.map((city, index) => `<option value="${index === 0 ? "all" : city}">${city}</option>`).join("");
@@ -809,27 +978,28 @@
         return `<option value="${index === 0 ? "all" : month}">${label}</option>`;
       }).join("");
 
-      const upcomingMonths = ["all", ...[...new Set(events.map(eventMonth).sort())].slice(0, 8)];
-      monthTabs.innerHTML = upcomingMonths.map(month => {
-        const label = month === "all" ? "全部月份" : `${month.slice(5)}月`;
-        return `<button class="${month === activeMonthTab ? "active" : ""}" data-month="${month}">${label}</button>`;
-      }).join("");
     }
 
     function getFilteredEvents() {
       const keyword = searchInput.value.trim().toLowerCase();
       const city = cityFilter.value;
-      const month = activeMonthTab !== "all" ? activeMonthTab : monthFilter.value;
+      const startDate = startDateFilter.value.trim();
+      const endDate = endDateFilter.value.trim();
+      const hasDateRange = isValidDateKey(startDate) || isValidDateKey(endDate);
+      const quickMonth = /^\d{4}-\d{2}$/.test(quickMonthInput.value.trim()) ? quickMonthInput.value.trim() : "all";
+      const month = hasDateRange ? "all" : (quickMonth !== "all" ? quickMonth : monthFilter.value);
       const distance = distanceFilter.value;
       const status = statusFilter.value;
 
       let filtered = events.filter(event => {
-        const text = `${event.name} ${event.city} ${event.place} ${event.status}`.toLowerCase();
+        const text = `${event.name} ${event.city} ${event.place} ${event.status} ${event.registrationDeadline}`.toLowerCase();
         return (activeType === "all" || event.type === activeType)
           && (city === "all" || event.city === city)
           && (month === "all" || eventMonth(event) === month)
+          && (!isValidDateKey(startDate) || event.date >= startDate)
+          && (!isValidDateKey(endDate) || event.date <= endDate)
           && (distance === "all" || distanceBucket(event) === distance)
-          && (status === "all" || event.status === status)
+          && (status === "all" || effectiveStatus(event) === status)
           && (!savedOnly.checked || saved.has(event.id))
           && (!keyword || text.includes(keyword));
       });
@@ -859,6 +1029,7 @@
           <td><span class="pill ${event.type}">${event.type === "run" ? "馬拉松 / 路跑" : "公路車 / 單車"}</span></td>
           <td><b>${event.city}</b><div class="event-meta">${event.place}</div></td>
           <td>${fullDate.format(new Date(`${event.date}T00:00:00`))}</td>
+          <td>${renderDeadline(event)}</td>
           <td><div class="distance-list">${formatDistance(event.distances).map(item => `<span class="distance-chip">${item}</span>`).join("")}</div></td>
           <td>
             <div class="row-actions">
@@ -891,13 +1062,13 @@
       });
     });
 
-    monthTabs.addEventListener("click", event => {
-      const button = event.target.closest("button");
-      if (!button) return;
-      activeMonthTab = button.dataset.month;
-      document.querySelectorAll("#monthTabs button").forEach(item => item.classList.remove("active"));
-      button.classList.add("active");
+    applyMonthBtn.addEventListener("click", render);
+    clearMonthBtn.addEventListener("click", () => {
+      quickMonthInput.value = "";
       render();
+    });
+    quickMonthInput.addEventListener("keydown", event => {
+      if (event.key === "Enter") render();
     });
 
     eventRows.addEventListener("click", event => {
@@ -910,39 +1081,42 @@
       render();
     });
 
-    [cityFilter, monthFilter, distanceFilter, statusFilter, searchInput, sortSelect, savedOnly].forEach(control => {
+    [cityFilter, monthFilter, startDateFilter, endDateFilter, distanceFilter, statusFilter, searchInput, sortSelect, savedOnly].forEach(control => {
       control.addEventListener("input", render);
     });
 
     monthFilter.addEventListener("input", () => {
-      activeMonthTab = "all";
-      document.querySelectorAll("#monthTabs button").forEach(item => item.classList.toggle("active", item.dataset.month === "all"));
+      quickMonthInput.value = "";
     });
 
     document.querySelector("#resetBtn").addEventListener("click", () => {
       activeType = "all";
-      activeMonthTab = "all";
       document.querySelectorAll(".segmented button").forEach(item => item.classList.toggle("active", item.dataset.type === "all"));
       searchInput.value = "";
       cityFilter.value = "all";
       monthFilter.value = "all";
+      quickMonthInput.value = "";
+      startDateFilter.value = "";
+      endDateFilter.value = "";
       distanceFilter.value = "all";
       statusFilter.value = "all";
       savedOnly.checked = false;
-      document.querySelectorAll("#monthTabs button").forEach(item => item.classList.toggle("active", item.dataset.month === "all"));
       render();
     });
 
+    updateEventsBtn.addEventListener("click", updateEventsFromJson);
+
     document.querySelector("#exportBtn").addEventListener("click", () => {
       const rows = events.filter(event => saved.has(event.id));
-      const csv = ["賽事名稱,類型,縣市,地點,日期,公里數,狀態,來源"].concat(rows.map(event => [
+      const csv = ["賽事名稱,類型,縣市,地點,日期,報名期限,公里數,狀態,來源"].concat(rows.map(event => [
         event.name,
         event.type === "run" ? "路跑" : "單車",
         event.city,
         event.place,
         event.date,
+        event.registrationDeadline || "待公告",
         formatDistance(event.distances).join("/"),
-        event.status,
+        effectiveStatus(event),
         event.url
       ].map(value => `"${String(value).replaceAll('"', '""')}"`).join(","))).join("\n");
       const blob = new Blob(["\ufeff" + csv], { type: "text/csv;charset=utf-8" });
@@ -955,9 +1129,16 @@
     });
 
     document.querySelector("#addBtn").addEventListener("click", () => dialog.showModal());
+    document.querySelector("#closeDialogBtn").addEventListener("click", () => {
+      form.reset();
+      dialog.close();
+    });
+    document.querySelector("#cancelDialogBtn").addEventListener("click", () => {
+      form.reset();
+      dialog.close();
+    });
 
     form.addEventListener("submit", event => {
-      if (event.submitter?.value === "cancel") return;
       event.preventDefault();
       const newEvent = {
         id: `custom-${Date.now()}`,
@@ -965,14 +1146,27 @@
         type: document.querySelector("#newType").value,
         city: document.querySelector("#newCity").value.trim(),
         place: document.querySelector("#newPlace").value.trim(),
-        date: document.querySelector("#newDate").value,
+        date: document.querySelector("#newDate").value.trim(),
+        registrationDeadline: document.querySelector("#newDeadline").value.trim(),
         status: document.querySelector("#newStatus").value,
         distances: document.querySelector("#newDistances").value.split(",").map(item => Number(item.trim())).filter(Boolean),
         url: document.querySelector("#newUrl").value.trim() || "#"
       };
+      if (!isValidDateKey(newEvent.date)) {
+        document.querySelector("#newDate").setCustomValidity("請輸入有效日期，格式為 YYYY-MM-DD，例如 2026-11-22");
+        document.querySelector("#newDate").reportValidity();
+        return;
+      }
+      document.querySelector("#newDate").setCustomValidity("");
+      if (newEvent.registrationDeadline && !isValidDateKey(newEvent.registrationDeadline)) {
+        document.querySelector("#newDeadline").setCustomValidity("請輸入有效報名期限，格式為 YYYY-MM-DD，例如 2026-10-31");
+        document.querySelector("#newDeadline").reportValidity();
+        return;
+      }
+      document.querySelector("#newDeadline").setCustomValidity("");
       customEvents.push(newEvent);
       localStorage.setItem("customEvents", JSON.stringify(customEvents));
-      events = [...baseEvents, ...customEvents];
+      events = [...baseEvents, ...customEvents].map(withEventDefaults);
       initializeFilters();
       form.reset();
       dialog.close();
