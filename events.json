@@ -1,162 +1,57 @@
 {
-  "updatedAt": "2026-06-03",
+  "updatedAt": "2026-06-04",
+  "source": "Taiwan Race Finder local updater",
+  "sources": [
+    {
+      "name": "運動筆記 Biji",
+      "url": "https://running.biji.co/index.php?q=competition",
+      "ok": false,
+      "status": "FETCH_FAILED",
+      "bytes": 0,
+      "parsed": 0,
+      "error": "fetch failed"
+    },
+    {
+      "name": "全統運動 CTRun",
+      "url": "https://www.ctrun.com.tw/",
+      "ok": false,
+      "status": "FETCH_FAILED",
+      "bytes": 0,
+      "parsed": 0,
+      "error": "fetch failed"
+    },
+    {
+      "name": "伊貝特報名網",
+      "url": "https://bao-ming.com/eb/index",
+      "ok": false,
+      "status": "FETCH_FAILED",
+      "bytes": 0,
+      "parsed": 0,
+      "error": "fetch failed"
+    }
+  ],
   "events": [
     {
-      "id": "taipei-marathon-2026",
-      "type": "run",
-      "name": "台北馬拉松",
-      "city": "台北市",
-      "place": "台北市政府周邊",
-      "date": "2026-12-20",
+      "id": "twb-east-towers-2026",
+      "type": "bike",
+      "name": "2026 TWB 東三塔 / 東雙塔",
+      "city": "新北市 / 台東縣 / 屏東縣",
+      "place": "富貴角楓林大橋起點，東部雙塔 / 三塔路線",
+      "date": "2026-01-17",
       "distances": [
-        42.195,
-        21.0975
+        550,
+        300
       ],
       "status": "待公告",
-      "url": "https://www.taipeicitymarathon.com/"
-    },
-    {
-      "id": "wanjinshi-2027",
-      "type": "run",
-      "name": "新北市萬金石馬拉松",
-      "city": "新北市",
-      "place": "萬里 / 金山 / 石門",
-      "date": "2027-03-21",
-      "distances": [
-        42.195,
-        10
-      ],
-      "status": "待公告",
-      "url": "https://wanjinshi-marathon.com.tw/"
-    },
-    {
-      "id": "kaohsiung-marathon-2027",
-      "type": "run",
-      "name": "高雄富邦馬拉松",
-      "city": "高雄市",
-      "place": "高雄市區",
-      "date": "2027-01-10",
-      "distances": [
-        42.195,
-        21.0975,
-        10,
-        5
-      ],
-      "status": "待公告",
-      "url": "https://www.khm.com.tw/"
-    },
-    {
-      "id": "tainan-ancient-capital-2027",
-      "type": "run",
-      "name": "臺南古都國際半程馬拉松",
-      "city": "台南市",
-      "place": "台南市政府 / 安平",
-      "date": "2027-03-07",
-      "distances": [
-        21.0975,
-        10,
-        5
-      ],
-      "status": "待公告",
-      "url": "https://www.sportsnet.org.tw/"
-    },
-    {
-      "id": "taichung-city-marathon-2026",
-      "type": "run",
-      "name": "臺中國際馬拉松",
-      "city": "台中市",
-      "place": "台中市區",
-      "date": "2026-11-01",
-      "distances": [
-        42.195,
-        21.0975,
-        10
-      ],
-      "status": "待公告",
-      "url": "https://www.ibodygo.com.tw/"
-    },
-    {
-      "id": "sun-moon-lake-marathon-2026",
-      "type": "run",
-      "name": "日月潭環湖馬拉松",
-      "city": "南投縣",
-      "place": "日月潭",
-      "date": "2026-10-25",
-      "distances": [
-        42.195,
-        29,
-        12
-      ],
-      "status": "待公告",
-      "url": "https://www.sunmoonlakemarathon.com/"
-    },
-    {
-      "id": "taroko-gorge-marathon-2026",
-      "type": "run",
-      "name": "太魯閣峽谷馬拉松",
-      "city": "花蓮縣",
-      "place": "太魯閣國家公園",
-      "date": "2026-11-07",
-      "distances": [
-        42.195,
-        21.0975,
-        12
-      ],
-      "status": "待公告",
-      "url": "https://www.taroko-marathon.com.tw/"
-    },
-    {
-      "id": "kinmen-marathon-2027",
-      "type": "run",
-      "name": "金門馬拉松",
-      "city": "金門縣",
-      "place": "金門縣立體育場",
-      "date": "2027-01-17",
-      "distances": [
-        42.195,
-        21.0975,
-        11.2,
-        5
-      ],
-      "status": "待公告",
-      "url": "https://kinmenmarathon.com/"
-    },
-    {
-      "id": "penghu-cross-sea-2026",
-      "type": "run",
-      "name": "澎湖跨海馬拉松",
-      "city": "澎湖縣",
-      "place": "西嶼 / 馬公",
-      "date": "2026-11-15",
-      "distances": [
-        42.195,
-        21.0975,
-        11,
-        5
-      ],
-      "status": "待公告",
-      "url": "https://www.penghu-nsa.gov.tw/"
-    },
-    {
-      "id": "eva-air-run-2026",
-      "type": "run",
-      "name": "長榮航空城市觀光半程馬拉松",
-      "city": "台北市",
-      "place": "總統府前廣場周邊",
-      "date": "2026-10-25",
-      "distances": [
-        21.0975,
-        10,
-        3
-      ],
-      "status": "待公告",
-      "url": "https://evaairrun.com/"
+      "registrationDeadline": "",
+      "organizer": "",
+      "url": "https://twbike.org/news/index.php?act=data&id=376"
     },
     {
       "id": "taipei-freeway-marathon-2026",
       "type": "run",
       "name": "南山人壽臺北國道馬拉松",
-      "city": "台北市",
+      "city": "臺北市",
       "place": "中山高速公路五股至汐止高架段",
       "date": "2026-03-08",
       "distances": [
@@ -164,48 +59,426 @@
         21.0975
       ],
       "status": "待公告",
+      "registrationDeadline": "",
+      "organizer": "",
       "url": "https://www.taipeifreewaymarathon.com/pages.php?id=2"
     },
     {
-      "id": "ns-run-half-marathon-2026",
-      "type": "run",
-      "name": "NS RUN 南山人壽半程馬拉松",
-      "city": "台北市",
-      "place": "總統府至大佳河濱公園",
-      "date": "2026-11-22",
+      "id": "tri-lava-taitung-playpark-2026",
+      "type": "tri",
+      "name": "2026 VW LAVanLife 玩賽樂園 / LAVA 台東",
+      "city": "臺東縣",
+      "place": "台東森林公園活水湖",
+      "date": "2026-03-13",
       "distances": [
-        21.0975,
+        113,
+        51.5,
+        25.75,
+        6.2,
+        5.3
+      ],
+      "status": "已結束",
+      "registrationDeadline": "2026-01-10",
+      "organizer": "",
+      "url": "https://running.biji.co/index.php?act=info&cid=12424&q=competition&subtitle=2026+VW+LAVanLife+%E7%8E%A9%E8%B3%BD%E6%A8%82%E5%9C%92"
+    },
+    {
+      "id": "tri-tainan-anping-national-2026",
+      "type": "tri",
+      "name": "2026 臺南安平全國鐵人三項錦標賽",
+      "city": "臺南市",
+      "place": "安平觀夕平台海域、周邊道路及台江國家公園",
+      "date": "2026-03-21",
+      "distances": [
+        51.5,
+        25.75
+      ],
+      "status": "已結束",
+      "registrationDeadline": "",
+      "organizer": "",
+      "url": "https://www.tainan.gov.tw/news_content.aspx?n=13370&s=8803907"
+    },
+    {
+      "id": "tri-puyuma-taitung-2026",
+      "type": "tri",
+      "name": "2026 臺東普悠瑪鐵人三項",
+      "city": "臺東縣",
+      "place": "臺東森林公園活水湖及周邊路段",
+      "date": "2026-03-28",
+      "distances": [
+        226,
+        113,
+        51.5
+      ],
+      "status": "已結束",
+      "registrationDeadline": "2025-10-31",
+      "organizer": "",
+      "url": "https://eventgo.tw/event/2e1112b0-d154-4ffb-bdca-b512ca035b55"
+    },
+    {
+      "id": "baoming-puma-night-run-2026",
+      "type": "run",
+      "name": "2026 PUMA NIGHT RUN 螢光夜跑",
+      "city": "臺北市",
+      "place": "大佳河濱公園行動巨蛋廣場",
+      "date": "2026-03-28",
+      "distances": [
+        21,
         10,
-        3
+        5
+      ],
+      "status": "報名截止",
+      "registrationDeadline": "2026-01-31",
+      "organizer": "",
+      "url": "https://bao-ming.com/puma-nightrun"
+    },
+    {
+      "id": "tri-ironman-penghu-2026",
+      "type": "tri",
+      "name": "2026 IRONMAN Penghu / IRONMAN Taiwan 澎湖國際鐵人三項賽",
+      "city": "澎湖縣",
+      "place": "澎湖福朋喜來登周邊 / 澎湖賽道",
+      "date": "2026-04-12",
+      "distances": [
+        226
+      ],
+      "status": "已結束",
+      "registrationDeadline": "",
+      "organizer": "",
+      "url": "https://www.ironman.com/races/im-taiwan"
+    },
+    {
+      "id": "tri-challenge-taiwan-2026",
+      "type": "tri",
+      "name": "2026 Challenge Taiwan 國際鐵人三項賽",
+      "city": "臺東縣",
+      "place": "臺東森林公園 / 活水湖 / 臺11線",
+      "date": "2026-04-25",
+      "distances": [
+        226,
+        113,
+        51.5,
+        25.75
+      ],
+      "status": "已結束",
+      "registrationDeadline": "2026-01-13",
+      "organizer": "",
+      "url": "https://www.challenge-taiwan.com/page/about/index.aspx?kind=114"
+    },
+    {
+      "id": "tri-tst-breeze-newtaipei-2026",
+      "type": "tri",
+      "name": "2026 tSt 新北微風鐵人三項賽",
+      "city": "新北市",
+      "place": "新北大都會公園微風運河",
+      "date": "2026-05-10",
+      "distances": [
+        113,
+        51.5,
+        25.75
+      ],
+      "status": "已結束",
+      "registrationDeadline": "",
+      "organizer": "",
+      "url": "https://tstgroup.com.tw/wp-content/uploads/2025/05/2026tStBreezeRegistration.pdf"
+    },
+    {
+      "id": "tri-force-lanyang-2026",
+      "type": "tri",
+      "name": "2026 FORCE 蘭陽鐵人三項賽",
+      "city": "宜蘭縣",
+      "place": "冬山河義成橋至冬山河橋段",
+      "date": "2026-05-23",
+      "distances": [],
+      "status": "已結束",
+      "registrationDeadline": "",
+      "organizer": "",
+      "url": "https://www.suao.gov.tw/News_Content.aspx?n=9043&s=399619"
+    },
+    {
+      "id": "neverstop-tataka-2026",
+      "type": "bike",
+      "name": "2026 NeverStop 永不放棄-塔塔加探索新中橫",
+      "city": "南投縣",
+      "place": "水裡商工至東埔山停車場",
+      "date": "2026-05-24",
+      "distances": [
+        80
+      ],
+      "status": "已結束",
+      "registrationDeadline": "",
+      "organizer": "",
+      "url": "https://eventgo.tw/event/ea2bff89-7098-4323-bce2-77cbd2c836f9"
+    },
+    {
+      "id": "baoming-crawl-2026-06-06-2026-ctau-超馬系列賽-越野站-台灣棲蘭林道越野-1s4n3aw",
+      "type": "run",
+      "name": "2026 CTAU 超馬系列賽--越野站 台灣棲蘭林道越野",
+      "city": "待確認",
+      "place": "詳見伊貝特活動頁",
+      "date": "2026-06-06",
+      "distances": [],
+      "status": "待公告",
+      "registrationDeadline": "",
+      "organizer": "",
+      "url": "https://bao-ming.com/eb/content/6924"
+    },
+    {
+      "id": "baoming-crawl-2026-06-06-2026世界自行車日-環大苗栗-1vjm4y9",
+      "type": "bike",
+      "name": "2026世界自行車日-環大苗栗",
+      "city": "苗栗縣",
+      "place": "詳見伊貝特活動頁",
+      "date": "2026-06-06",
+      "distances": [],
+      "status": "待公告",
+      "registrationDeadline": "",
+      "organizer": "",
+      "url": "https://bao-ming.com/eb/content/6981"
+    },
+    {
+      "id": "baoming-crawl-2026-06-06-2026年新屋綠色騎跡鐵馬行-1x3cdqd",
+      "type": "bike",
+      "name": "2026年新屋綠色騎跡鐵馬行",
+      "city": "待確認",
+      "place": "詳見伊貝特活動頁",
+      "date": "2026-06-06",
+      "distances": [],
+      "status": "待公告",
+      "registrationDeadline": "",
+      "organizer": "",
+      "url": "https://bao-ming.com/eb/content/7005"
+    },
+    {
+      "id": "baoming-crawl-2026-06-06-2026芎林路跑嘉年華-1xzs5yx",
+      "type": "run",
+      "name": "2026芎林路跑嘉年華",
+      "city": "待確認",
+      "place": "詳見伊貝特活動頁",
+      "date": "2026-06-06",
+      "distances": [],
+      "status": "待公告",
+      "registrationDeadline": "",
+      "organizer": "",
+      "url": "https://bao-ming.com/eb/content/6962"
+    },
+    {
+      "id": "baoming-crawl-2026-06-07-2026-銅礦88經典自行車挑戰賽-3z5zr1",
+      "type": "bike",
+      "name": "2026 銅礦88經典自行車挑戰賽",
+      "city": "待確認",
+      "place": "詳見伊貝特活動頁",
+      "date": "2026-06-07",
+      "distances": [],
+      "status": "待公告",
+      "registrationDeadline": "",
+      "organizer": "",
+      "url": "https://bao-ming.com/eb/content/6922"
+    },
+    {
+      "id": "baoming-crawl-2026-06-07-2026年-neverstop永不放棄-紫南宮一騎來發財-環縣自行車-99-9k-17e8lh4",
+      "type": "bike",
+      "name": "2026年 NeverStop永不放棄 紫南宮一騎來發財 環縣自行車 99.9K",
+      "city": "待確認",
+      "place": "詳見伊貝特活動頁",
+      "date": "2026-06-07",
+      "distances": [
+        99.9
+      ],
+      "status": "待公告",
+      "registrationDeadline": "",
+      "organizer": "",
+      "url": "https://bao-ming.com/eb/content/6951"
+    },
+    {
+      "id": "baoming-crawl-2026-06-07-健康台灣-2026世界自由車日-高雄城市綠園道漫漫騎-1qavpke",
+      "type": "bike",
+      "name": "健康台灣－2026世界自由車日 高雄城市綠園道漫漫騎",
+      "city": "高雄市",
+      "place": "詳見伊貝特活動頁",
+      "date": "2026-06-07",
+      "distances": [],
+      "status": "待公告",
+      "registrationDeadline": "",
+      "organizer": "",
+      "url": "https://bao-ming.com/eb/content/6996"
+    },
+    {
+      "id": "baoming-crawl-2026-06-12-2026-kenda-cup-the-road-to-taiwan-kom-summer建大盃臺-ej32lo",
+      "type": "bike",
+      "name": "2026 KENDA Cup The Road to Taiwan KOM-Summer建大盃臺灣KOM-夏季",
+      "city": "待確認",
+      "place": "詳見伊貝特活動頁",
+      "date": "2026-06-12",
+      "distances": [
+        2026
+      ],
+      "status": "待公告",
+      "registrationDeadline": "",
+      "organizer": "",
+      "url": "https://bao-ming.com/eb/content/6934"
+    },
+    {
+      "id": "ctrun-chiayi-bike-day-2026",
+      "type": "bike",
+      "name": "2026 來嘉BIKE訪．騎聚好歡樂 嘉義市自行車日活動",
+      "city": "嘉義市",
+      "place": "蘭潭音樂噴泉",
+      "date": "2026-06-13",
+      "distances": [
+        6.4,
+        15.4
+      ],
+      "status": "報名截止",
+      "registrationDeadline": "",
+      "organizer": "",
+      "url": "https://www.ctrun.com.tw/"
+    },
+    {
+      "id": "baoming-crawl-2026-06-14-2026-gravel-fundo年度系列-stage-2-台南玉井站-1x41npu",
+      "type": "bike",
+      "name": "2026 Gravel Fundo年度系列 Stage 2 台南玉井站",
+      "city": "臺南市",
+      "place": "詳見伊貝特活動頁",
+      "date": "2026-06-14",
+      "distances": [],
+      "status": "待公告",
+      "registrationDeadline": "",
+      "organizer": "",
+      "url": "https://bao-ming.com/eb/content/7024"
+    },
+    {
+      "id": "baoming-crawl-2026-06-14-2026年桃園市議會議長盃路跑-1t7fv2h",
+      "type": "run",
+      "name": "2026年桃園市議會議長盃路跑",
+      "city": "桃園市",
+      "place": "詳見伊貝特活動頁",
+      "date": "2026-06-14",
+      "distances": [],
+      "status": "待公告",
+      "registrationDeadline": "",
+      "organizer": "",
+      "url": "https://bao-ming.com/eb/content/6945"
+    },
+    {
+      "id": "baoming-tri-2026-forcekids-liufu-village-2026",
+      "type": "tri",
+      "name": "第三屆ForceKidsＸ六福村小鐵人挑戰賽",
+      "city": "新竹縣",
+      "place": "六福村",
+      "date": "2026-06-14",
+      "distances": [],
+      "status": "待公告",
+      "registrationDeadline": "",
+      "organizer": "",
+      "url": "https://bao-ming.com/eb/index"
+    },
+    {
+      "id": "baoming-crawl-2026-06-15-2026tis崇越盃武嶺自行車挑戰賽-六月場次-p10gd",
+      "type": "bike",
+      "name": "2026TIS崇越盃武嶺自行車挑戰賽 - 六月場次",
+      "city": "南投縣",
+      "place": "詳見伊貝特活動頁",
+      "date": "2026-06-15",
+      "distances": [],
+      "status": "待公告",
+      "registrationDeadline": "",
+      "organizer": "",
+      "url": "https://bao-ming.com/eb/content/6837"
+    },
+    {
+      "id": "baoming-crawl-2026-06-18-瘋系列第三屆環台賽-seprtq",
+      "type": "bike",
+      "name": "瘋系列第三屆環台賽",
+      "city": "待確認",
+      "place": "詳見伊貝特活動頁",
+      "date": "2026-06-18",
+      "distances": [],
+      "status": "待公告",
+      "registrationDeadline": "",
+      "organizer": "",
+      "url": "https://bao-ming.com/eb/content/6729"
+    },
+    {
+      "id": "baoming-crawl-2026-06-27-從心出發-挑戰巔峰-2026-neverstop永不放棄挑戰巔峰-武嶺-1fgm3mo",
+      "type": "bike",
+      "name": "「從心出發、挑戰巔峰」 2026 NeverStop永不放棄挑戰巔峰－武嶺",
+      "city": "南投縣",
+      "place": "詳見伊貝特活動頁",
+      "date": "2026-06-27",
+      "distances": [],
+      "status": "待公告",
+      "registrationDeadline": "",
+      "organizer": "",
+      "url": "https://bao-ming.com/eb/content/6867"
+    },
+    {
+      "id": "baoming-crawl-2026-06-27-2026-第二屆東石仲夏星光路跑-海鮮星光盛典-19lsz85",
+      "type": "run",
+      "name": "2026 第二屆東石仲夏星光路跑 × 海鮮星光盛典",
+      "city": "嘉義縣",
+      "place": "詳見伊貝特活動頁",
+      "date": "2026-06-27",
+      "distances": [],
+      "status": "待公告",
+      "registrationDeadline": "",
+      "organizer": "",
+      "url": "https://bao-ming.com/eb/content/6852"
+    },
+    {
+      "id": "baoming-crawl-2026-06-27-2026-toyota-run-高雄-樂齡專場-qva5nr",
+      "type": "run",
+      "name": "2026 TOYOTA RUN 高雄 樂齡專場",
+      "city": "高雄市",
+      "place": "詳見伊貝特活動頁",
+      "date": "2026-06-27",
+      "distances": [],
+      "status": "待公告",
+      "registrationDeadline": "",
+      "organizer": "",
+      "url": "https://bao-ming.com/eb/content/7009"
+    },
+    {
+      "id": "irunner-guangfu-bike-mataian-2026",
+      "type": "bike",
+      "name": "跟著單車小D 揪愛騎：2026慢遊光復，探索馬太鞍之美！",
+      "city": "花蓮縣",
+      "place": "光復鄉馬太鞍",
+      "date": "2026-06-27",
+      "distances": [
+        20,
+        40
       ],
       "status": "報名中",
-      "url": "https://www.nanshanrun.com/rules-and-regulations.html"
+      "registrationDeadline": "2026-06-24",
+      "organizer": "",
+      "url": "https://irunner.biji.co/"
     },
     {
-      "id": "tour-de-taiwan-2027",
-      "type": "bike",
-      "name": "國際自由車環台公路大賽",
-      "city": "全台灣",
-      "place": "多站城市路線",
-      "date": "2027-03-14",
-      "distances": [
-        600
-      ],
+      "id": "baoming-crawl-2026-06-28-115年運動i臺灣2-0計畫-北屯區路跑樂活嘉年華-1lyczpe",
+      "type": "run",
+      "name": "115年運動i臺灣2.0計畫-北屯區路跑樂活嘉年華",
+      "city": "待確認",
+      "place": "詳見伊貝特活動頁",
+      "date": "2026-06-28",
+      "distances": [],
       "status": "待公告",
-      "url": "https://www.tourdetaiwan.org.tw/"
+      "registrationDeadline": "",
+      "organizer": "",
+      "url": "https://bao-ming.com/eb/content/6965"
     },
     {
-      "id": "taiwan-kom-2026",
-      "type": "bike",
-      "name": "臺灣自行車登山王挑戰",
-      "city": "花蓮縣",
-      "place": "七星潭至武嶺",
-      "date": "2026-10-30",
-      "distances": [
-        105
-      ],
+      "id": "baoming-tri-2026-force-frocekids-duathlon-2026",
+      "type": "tri",
+      "name": "2026 Force & FroceKids 水陸兩項賽",
+      "city": "待確認",
+      "place": "詳見伊貝特活動頁",
+      "date": "2026-06-28",
+      "distances": [],
       "status": "待公告",
-      "url": "https://www.taiwankom.org/"
+      "registrationDeadline": "",
+      "organizer": "",
+      "url": "https://bao-ming.com/eb/index"
     },
     {
       "id": "taiwan-kom-summer-2026",
@@ -218,41 +491,347 @@
         55
       ],
       "status": "待公告",
+      "registrationDeadline": "",
+      "organizer": "",
       "url": "https://www.cyclist.org.tw/"
     },
     {
-      "id": "sun-moon-lake-bike-2026",
+      "id": "irunner-hualien-ride-journal-2026",
       "type": "bike",
-      "name": "日月潭 Come! Bikeday",
-      "city": "南投縣",
-      "place": "日月潭環湖",
-      "date": "2026-11-08",
+      "name": "花蓮山海騎遇記自行車日｜2026 Hualien Ride Journal",
+      "city": "花蓮縣",
+      "place": "花蓮山海路線",
+      "date": "2026-07-01",
       "distances": [
         30,
         60,
-        90
+        100
       ],
-      "status": "待公告",
-      "url": "https://www.sunmoonlake.gov.tw/"
+      "status": "報名中",
+      "registrationDeadline": "",
+      "organizer": "",
+      "url": "https://irunner.biji.co/"
     },
     {
-      "id": "formosa-900-2026",
+      "id": "baoming-crawl-2026-07-18-台灣瘋系列-無眠征途200k夜騎日月潭限時挑戰賽-rm1olp",
       "type": "bike",
-      "name": "臺灣自行車節 Formosa 900",
-      "city": "全台灣",
-      "place": "環島路線",
-      "date": "2026-11-07",
+      "name": "台灣瘋系列 無眠征途200K夜騎日月潭限時挑戰賽",
+      "city": "南投縣",
+      "place": "詳見伊貝特活動頁",
+      "date": "2026-07-18",
       "distances": [
-        900
+        200
       ],
-      "status": "即將開放",
-      "url": "https://taiwanbike.tw/"
+      "status": "待公告",
+      "registrationDeadline": "",
+      "organizer": "",
+      "url": "https://bao-ming.com/eb/content/6953"
+    },
+    {
+      "id": "yangmingshan-king-2026",
+      "type": "bike",
+      "name": "陽明山王公路車挑戰",
+      "city": "臺北市",
+      "place": "陽明山",
+      "date": "2026-07-19",
+      "distances": [
+        35,
+        70
+      ],
+      "status": "待公告",
+      "registrationDeadline": "",
+      "organizer": "",
+      "url": "https://www.cyclist.org.tw/"
+    },
+    {
+      "id": "baoming-crawl-2026-07-25-2026南投旅遊百k自行車挑戰-uy31lf",
+      "type": "bike",
+      "name": "2026南投旅遊百K自行車挑戰",
+      "city": "南投縣",
+      "place": "詳見伊貝特活動頁",
+      "date": "2026-07-25",
+      "distances": [],
+      "status": "待公告",
+      "registrationDeadline": "",
+      "organizer": "",
+      "url": "https://bao-ming.com/eb/content/7002"
+    },
+    {
+      "id": "baoming-crawl-2026-07-26-115年運動i臺灣2-0計畫-臺中市北區單車路跑嘉年華-14n90ks",
+      "type": "run",
+      "name": "115年運動i臺灣2.0計畫-臺中市北區單車路跑嘉年華",
+      "city": "臺中市",
+      "place": "詳見伊貝特活動頁",
+      "date": "2026-07-26",
+      "distances": [],
+      "status": "待公告",
+      "registrationDeadline": "",
+      "organizer": "",
+      "url": "https://bao-ming.com/eb/content/7071"
+    },
+    {
+      "id": "baoming-crawl-2026-08-02-2026-慶祝父親節愛心公益路跑-15ldrf",
+      "type": "run",
+      "name": "2026 慶祝父親節愛心公益路跑",
+      "city": "待確認",
+      "place": "詳見伊貝特活動頁",
+      "date": "2026-08-02",
+      "distances": [],
+      "status": "待公告",
+      "registrationDeadline": "",
+      "organizer": "",
+      "url": "https://bao-ming.com/eb/content/6976"
+    },
+    {
+      "id": "baoming-crawl-2026-08-02-2026蘭陽愛88公益路跑-14yv3ol",
+      "type": "run",
+      "name": "2026蘭陽愛88公益路跑",
+      "city": "宜蘭縣",
+      "place": "詳見伊貝特活動頁",
+      "date": "2026-08-02",
+      "distances": [],
+      "status": "待公告",
+      "registrationDeadline": "",
+      "organizer": "",
+      "url": "https://bao-ming.com/eb/content/6968"
+    },
+    {
+      "id": "baoming-crawl-2026-08-08-2026關山豐九馬拉松-14zd1kv",
+      "type": "run",
+      "name": "2026關山豐九馬拉松",
+      "city": "待確認",
+      "place": "詳見伊貝特活動頁",
+      "date": "2026-08-08",
+      "distances": [
+        42.195
+      ],
+      "status": "待公告",
+      "registrationDeadline": "",
+      "organizer": "",
+      "url": "https://bao-ming.com/eb/content/6947"
+    },
+    {
+      "id": "baoming-crawl-2026-08-15-2026聖母廟月老姻緣紅線牽馬拉松-1iofa72",
+      "type": "run",
+      "name": "2026聖母廟月老姻緣紅線牽馬拉松",
+      "city": "待確認",
+      "place": "詳見伊貝特活動頁",
+      "date": "2026-08-15",
+      "distances": [
+        42.195
+      ],
+      "status": "待公告",
+      "registrationDeadline": "",
+      "organizer": "",
+      "url": "https://bao-ming.com/eb/content/6926"
+    },
+    {
+      "id": "baoming-crawl-2026-08-22-2026-南投旅遊百k自行車小鎮漫遊-兒童滑步車賽-1yoxmsa",
+      "type": "bike",
+      "name": "2026 南投旅遊百K自行車小鎮漫遊~兒童滑步車賽",
+      "city": "南投縣",
+      "place": "詳見伊貝特活動頁",
+      "date": "2026-08-22",
+      "distances": [],
+      "status": "待公告",
+      "registrationDeadline": "",
+      "organizer": "",
+      "url": "https://bao-ming.com/eb/content/7001"
+    },
+    {
+      "id": "baoming-crawl-2026-08-23-新竹市越野跑巡迴運動指導團-vxqesb",
+      "type": "run",
+      "name": "新竹市越野跑巡迴運動指導團",
+      "city": "新竹縣/市",
+      "place": "詳見伊貝特活動頁",
+      "date": "2026-08-23",
+      "distances": [],
+      "status": "待公告",
+      "registrationDeadline": "",
+      "organizer": "",
+      "url": "https://bao-ming.com/eb/content/6992"
+    },
+    {
+      "id": "baoming-crawl-2026-08-29-115年運動i臺灣-新北市單車快樂遊-abg59d",
+      "type": "bike",
+      "name": "115年運動i臺灣-新北市單車快樂遊",
+      "city": "新北市",
+      "place": "詳見伊貝特活動頁",
+      "date": "2026-08-29",
+      "distances": [],
+      "status": "待公告",
+      "registrationDeadline": "",
+      "organizer": "",
+      "url": "https://bao-ming.com/eb/content/6895"
+    },
+    {
+      "id": "baoming-crawl-2026-08-29-2026美麗金山路跑活動-7u9iaw",
+      "type": "run",
+      "name": "2026美麗金山路跑活動",
+      "city": "待確認",
+      "place": "詳見伊貝特活動頁",
+      "date": "2026-08-29",
+      "distances": [],
+      "status": "待公告",
+      "registrationDeadline": "",
+      "organizer": "",
+      "url": "https://bao-ming.com/eb/content/7036"
+    },
+    {
+      "id": "ctrun-pawpatrol-kaohsiung-2026",
+      "type": "run",
+      "name": "2026 汪汪隊立大功路跑－親子超級任務日高雄場",
+      "city": "高雄市",
+      "place": "前鎮區時代大道",
+      "date": "2026-08-30",
+      "distances": [
+        4
+      ],
+      "status": "報名中",
+      "registrationDeadline": "2026-06-11",
+      "organizer": "",
+      "url": "https://www.ctrun.com.tw/"
+    },
+    {
+      "id": "irunner-eastcity-hehuanshan-trail-2026",
+      "type": "run",
+      "name": "2026東城盃合歡山越野馬拉松",
+      "city": "南投縣",
+      "place": "合歡山",
+      "date": "2026-09-04",
+      "distances": [
+        42,
+        21,
+        10
+      ],
+      "status": "報名中",
+      "registrationDeadline": "2026-06-15",
+      "organizer": "",
+      "url": "https://irunner.biji.co/"
+    },
+    {
+      "id": "baoming-crawl-2026-09-05-2026南投旅遊百k自行車小鎮漫遊-19ggpaq",
+      "type": "bike",
+      "name": "2026南投旅遊百K自行車小鎮漫遊",
+      "city": "南投縣",
+      "place": "詳見伊貝特活動頁",
+      "date": "2026-09-05",
+      "distances": [],
+      "status": "待公告",
+      "registrationDeadline": "",
+      "organizer": "",
+      "url": "https://bao-ming.com/eb/content/6999"
+    },
+    {
+      "id": "ctrun-pawpatrol-taichung-2026",
+      "type": "run",
+      "name": "2026 汪汪隊立大功路跑－親子超級任務日台中場",
+      "city": "臺中市",
+      "place": "台中市中央球場",
+      "date": "2026-09-06",
+      "distances": [
+        3.5
+      ],
+      "status": "報名中",
+      "registrationDeadline": "2026-06-11",
+      "organizer": "",
+      "url": "https://www.ctrun.com.tw/"
+    },
+    {
+      "id": "96-league-wuling-race-2026",
+      "type": "bike",
+      "name": "2026 96聯賽 武嶺站｜市民競賽組",
+      "city": "南投縣",
+      "place": "埔里地理中心碑至武嶺牌樓",
+      "date": "2026-09-07",
+      "distances": [
+        53
+      ],
+      "status": "報名中",
+      "registrationDeadline": "",
+      "organizer": "",
+      "url": "https://www.96sporter.com/event_detail124.htm"
+    },
+    {
+      "id": "96heroes-wuling-challenge-2026",
+      "type": "bike",
+      "name": "2026 96Heroes 中華賓士・武嶺站｜挑戰組",
+      "city": "南投縣",
+      "place": "埔里地理中心碑至武嶺牌樓",
+      "date": "2026-09-07",
+      "distances": [
+        53
+      ],
+      "status": "報名中",
+      "registrationDeadline": "",
+      "organizer": "",
+      "url": "https://www.96sporter.com/event_detail121.htm"
+    },
+    {
+      "id": "baoming-tainan-100k-ultra-2026",
+      "type": "run",
+      "name": "2026 府城100公里超級馬拉松",
+      "city": "臺南市",
+      "place": "億載金城外圍道路",
+      "date": "2026-09-12",
+      "distances": [
+        100.7
+      ],
+      "status": "報名中",
+      "registrationDeadline": "2026-08-14",
+      "organizer": "",
+      "url": "https://www.paobaodao.com/tw/race/tainan-100km-marathon/"
+    },
+    {
+      "id": "baoming-crawl-2026-09-12-2026-tour-of-grand-taipei-環大臺北自行車挑戰-14utuns",
+      "type": "bike",
+      "name": "2026 TOUR OF GRAND TAIPEI 環大臺北自行車挑戰",
+      "city": "臺北市",
+      "place": "詳見伊貝特活動頁",
+      "date": "2026-09-12",
+      "distances": [],
+      "status": "待公告",
+      "registrationDeadline": "",
+      "organizer": "",
+      "url": "https://bao-ming.com/eb/content/6933"
+    },
+    {
+      "id": "baoming-crawl-2026-09-13-2026府城超級馬拉松-5jviab",
+      "type": "run",
+      "name": "2026府城超級馬拉松",
+      "city": "待確認",
+      "place": "詳見伊貝特活動頁",
+      "date": "2026-09-13",
+      "distances": [
+        42.195
+      ],
+      "status": "待公告",
+      "registrationDeadline": "",
+      "organizer": "",
+      "url": "https://bao-ming.com/eb/content/6980"
+    },
+    {
+      "id": "irunner-hualien-fuli-daylily-2026",
+      "type": "run",
+      "name": "2026花蓮富里六十石山金針花超半程馬拉松",
+      "city": "花蓮縣",
+      "place": "富里鄉六十石山",
+      "date": "2026-09-13",
+      "distances": [
+        21,
+        10,
+        5
+      ],
+      "status": "報名中",
+      "registrationDeadline": "2026-07-10",
+      "organizer": "",
+      "url": "https://irunner.biji.co/"
     },
     {
       "id": "taipei-riverside-bike-2026",
       "type": "bike",
       "name": "台北河濱自行車挑戰",
-      "city": "台北市",
+      "city": "臺北市",
       "place": "河濱自行車道",
       "date": "2026-09-13",
       "distances": [
@@ -261,7 +840,99 @@
         100
       ],
       "status": "待公告",
+      "registrationDeadline": "",
+      "organizer": "",
       "url": "https://www.travel.taipei/"
+    },
+    {
+      "id": "baoming-crawl-2026-09-14-2026-yakima-崇越盃武嶺自行車挑戰賽-九月場次-1xvpo3p",
+      "type": "bike",
+      "name": "2026 YAKIMA 崇越盃武嶺自行車挑戰賽 - 九月場次",
+      "city": "南投縣",
+      "place": "詳見伊貝特活動頁",
+      "date": "2026-09-14",
+      "distances": [],
+      "status": "待公告",
+      "registrationDeadline": "",
+      "organizer": "",
+      "url": "https://bao-ming.com/eb/content/6903"
+    },
+    {
+      "id": "ctrun-taipei-half-marathon-2026",
+      "type": "run",
+      "name": "2026 台北國際半程馬拉松",
+      "city": "臺北市",
+      "place": "大佳河濱公園圓形廣場",
+      "date": "2026-09-20",
+      "distances": [
+        4,
+        10,
+        21
+      ],
+      "status": "報名截止",
+      "registrationDeadline": "",
+      "organizer": "",
+      "url": "https://www.ctrun.com.tw/"
+    },
+    {
+      "id": "ctrun-pawpatrol-newtaipei-2026",
+      "type": "run",
+      "name": "2026 汪汪隊立大功路跑－親子超級任務日新北場",
+      "city": "新北市",
+      "place": "蘆洲區微風運河廣場",
+      "date": "2026-09-20",
+      "distances": [
+        3.5
+      ],
+      "status": "報名中",
+      "registrationDeadline": "2026-06-11",
+      "organizer": "",
+      "url": "https://www.ctrun.com.tw/"
+    },
+    {
+      "id": "baoming-crawl-2026-09-20-2026-榮耀九三-向國軍致敬-路跑嘉年華-1cm06nz",
+      "type": "run",
+      "name": "2026「榮耀九三 向國軍致敬」路跑嘉年華",
+      "city": "待確認",
+      "place": "詳見伊貝特活動頁",
+      "date": "2026-09-20",
+      "distances": [],
+      "status": "待公告",
+      "registrationDeadline": "",
+      "organizer": "",
+      "url": "https://bao-ming.com/eb/content/7020"
+    },
+    {
+      "id": "irunner-keelung-half-marathon-2026",
+      "type": "run",
+      "name": "2026基隆半程馬拉松",
+      "city": "基隆市",
+      "place": "基隆國門廣場",
+      "date": "2026-09-20",
+      "distances": [
+        21,
+        9,
+        3
+      ],
+      "status": "報名中",
+      "registrationDeadline": "2026-06-30",
+      "organizer": "",
+      "url": "https://irunner.biji.co/2026Keelungmarathon"
+    },
+    {
+      "id": "baoming-crawl-2026-09-20-2026澎湖跳島101k自行車活動-101k-hopping-bike-z28r87",
+      "type": "bike",
+      "name": "2026澎湖跳島101K自行車活動 (101K Hopping Bike)",
+      "city": "澎湖縣",
+      "place": "詳見伊貝特活動頁",
+      "date": "2026-09-20",
+      "distances": [
+        101
+      ],
+      "status": "待公告",
+      "registrationDeadline": "",
+      "organizer": "",
+      "url": "https://bao-ming.com/eb/content/6975"
     },
     {
       "id": "hualien-east-coast-bike-2026",
@@ -275,171 +946,9 @@
         200
       ],
       "status": "待公告",
+      "registrationDeadline": "",
+      "organizer": "",
       "url": "https://www.eastcoast-nsa.gov.tw/"
-    },
-    {
-      "id": "taiwan-cycling-festival-2026",
-      "type": "bike",
-      "name": "騎遇福爾摩沙系列活動",
-      "city": "全台灣",
-      "place": "各縣市自行車路線",
-      "date": "2026-10-10",
-      "distances": [
-        20,
-        50,
-        100
-      ],
-      "status": "待公告",
-      "url": "https://taiwanbike.tw/"
-    },
-    {
-      "id": "yangmingshan-king-2026",
-      "type": "bike",
-      "name": "陽明山王公路車挑戰",
-      "city": "台北市",
-      "place": "陽明山",
-      "date": "2026-07-19",
-      "distances": [
-        35,
-        70
-      ],
-      "status": "待公告",
-      "url": "https://www.cyclist.org.tw/"
-    },
-    {
-      "id": "taichung-bike-classic-2026",
-      "type": "bike",
-      "name": "台中經典百K自行車挑戰",
-      "city": "台中市",
-      "place": "后里 / 東勢 / 新社",
-      "date": "2026-10-04",
-      "distances": [
-        50,
-        100
-      ],
-      "status": "待公告",
-      "url": "https://www.cyclist.org.tw/"
-    },
-    {
-      "id": "tba-north-south-360-2026",
-      "type": "bike",
-      "name": "2026 TBA北高360",
-      "city": "新北市 / 高雄市",
-      "place": "八里廖添丁廟至高雄左營屏山國小",
-      "date": "2026-11-13",
-      "distances": [
-        360
-      ],
-      "status": "報名中",
-      "url": "https://www.runbase.tw/blogs/road-run/tba360"
-    },
-    {
-      "id": "twb-north-south-360-2026",
-      "type": "bike",
-      "name": "第13屆 2026 TWB 北高360",
-      "city": "新北市 / 高雄市",
-      "place": "北台灣至高雄長距離路線",
-      "date": "2026-11-06",
-      "distances": [
-        360
-      ],
-      "status": "待公告",
-      "url": "https://twbike.org/news/?act=data&id=372"
-    },
-    {
-      "id": "twb-east-towers-2026",
-      "type": "bike",
-      "name": "2026 TWB 東三塔 / 東雙塔",
-      "city": "新北市 / 台東縣 / 屏東縣",
-      "place": "富貴角楓林大橋起點，東部雙塔 / 三塔路線",
-      "date": "2026-01-17",
-      "distances": [
-        550,
-        300
-      ],
-      "status": "待公告",
-      "url": "https://twbike.org/news/index.php?act=data&id=376"
-    },
-    {
-      "id": "96heroes-wuling-challenge-2026",
-      "type": "bike",
-      "name": "2026 96Heroes 中華賓士・武嶺站｜挑戰組",
-      "city": "南投縣",
-      "place": "埔里地理中心碑至武嶺牌樓",
-      "date": "2026-09-07",
-      "distances": [
-        53
-      ],
-      "status": "報名中",
-      "url": "https://www.96sporter.com/event_detail121.htm"
-    },
-    {
-      "id": "96-league-wuling-race-2026",
-      "type": "bike",
-      "name": "2026 96聯賽 武嶺站｜市民競賽組",
-      "city": "南投縣",
-      "place": "埔里地理中心碑至武嶺牌樓",
-      "date": "2026-09-07",
-      "distances": [
-        53
-      ],
-      "status": "報名中",
-      "url": "https://www.96sporter.com/event_detail124.htm"
-    },
-    {
-      "id": "neverstop-tataka-2026",
-      "type": "bike",
-      "name": "2026 NeverStop 永不放棄-塔塔加探索新中橫",
-      "city": "南投縣",
-      "place": "水裡商工至東埔山停車場",
-      "date": "2026-05-24",
-      "distances": [
-        80
-      ],
-      "status": "已結束",
-      "url": "https://eventgo.tw/event/ea2bff89-7098-4323-bce2-77cbd2c836f9"
-    },
-    {
-      "id": "ctrun-pawpatrol-kaohsiung-2026",
-      "type": "run",
-      "name": "2026 汪汪隊立大功路跑－親子超級任務日高雄場",
-      "city": "高雄市",
-      "place": "前鎮區時代大道",
-      "date": "2026-08-30",
-      "distances": [
-        4
-      ],
-      "status": "報名中",
-      "url": "https://www.ctrun.com.tw/",
-      "registrationDeadline": "2026-06-11"
-    },
-    {
-      "id": "ctrun-pawpatrol-taichung-2026",
-      "type": "run",
-      "name": "2026 汪汪隊立大功路跑－親子超級任務日台中場",
-      "city": "台中市",
-      "place": "台中市中央球場",
-      "date": "2026-09-06",
-      "distances": [
-        3.5
-      ],
-      "status": "報名中",
-      "url": "https://www.ctrun.com.tw/",
-      "registrationDeadline": "2026-06-11"
-    },
-    {
-      "id": "ctrun-pawpatrol-newtaipei-2026",
-      "type": "run",
-      "name": "2026 汪汪隊立大功路跑－親子超級任務日新北場",
-      "city": "新北市",
-      "place": "蘆洲區微風運河廣場",
-      "date": "2026-09-20",
-      "distances": [
-        3.5
-      ],
-      "status": "報名中",
-      "url": "https://www.ctrun.com.tw/",
-      "registrationDeadline": "2026-06-11"
     },
     {
       "id": "ctrun-miaoli-starlight-marathon-2026",
@@ -455,7 +964,81 @@
         42
       ],
       "status": "報名中",
+      "registrationDeadline": "",
+      "organizer": "",
       "url": "https://www.ctrun.com.tw/"
+    },
+    {
+      "id": "tri-newtaipei-asia-cup-2026",
+      "type": "tri",
+      "name": "2026 Asia Triathlon Cup New Taipei 亞洲盃新北站",
+      "city": "新北市",
+      "place": "新北微風",
+      "date": "2026-10-03",
+      "distances": [
+        25.75
+      ],
+      "status": "待公告",
+      "registrationDeadline": "",
+      "organizer": "",
+      "url": "https://events.triathlon.org/2026-asia-triathlon-cup-new-taipei/race-info"
+    },
+    {
+      "id": "baoming-crawl-2026-10-03-2026池上星夜慢城路跑-1gqhz4t",
+      "type": "run",
+      "name": "2026池上星夜慢城路跑",
+      "city": "臺東縣",
+      "place": "詳見伊貝特活動頁",
+      "date": "2026-10-03",
+      "distances": [],
+      "status": "待公告",
+      "registrationDeadline": "",
+      "organizer": "",
+      "url": "https://bao-ming.com/eb/content/7043"
+    },
+    {
+      "id": "baoming-crawl-2026-10-03-2026第二屆龜山朝日馬拉松-2-0-zs5ke2",
+      "type": "run",
+      "name": "2026第二屆龜山朝日馬拉松 2.0",
+      "city": "待確認",
+      "place": "詳見伊貝特活動頁",
+      "date": "2026-10-03",
+      "distances": [
+        42.195
+      ],
+      "status": "待公告",
+      "registrationDeadline": "",
+      "organizer": "",
+      "url": "https://bao-ming.com/eb/content/7019"
+    },
+    {
+      "id": "baoming-crawl-2026-10-03-2026l-tape環法自行車挑戰賽-紐崔萊-日月潭站-1tb7f0j",
+      "type": "bike",
+      "name": "2026L’Étape環法自行車挑戰賽-紐崔萊 • 日月潭站",
+      "city": "南投縣",
+      "place": "詳見伊貝特活動頁",
+      "date": "2026-10-03",
+      "distances": [],
+      "status": "待公告",
+      "registrationDeadline": "",
+      "organizer": "",
+      "url": "https://bao-ming.com/eb/content/6882"
+    },
+    {
+      "id": "tri-newtaipei-national-championship-2026",
+      "type": "tri",
+      "name": "2026 新北全國鐵人三項錦標賽",
+      "city": "新北市",
+      "place": "新北微風",
+      "date": "2026-10-04",
+      "distances": [
+        51.5,
+        25.75
+      ],
+      "status": "待公告",
+      "registrationDeadline": "",
+      "organizer": "",
+      "url": "https://www.ctta.org.tw/tw/about/index.aspx?kind=88"
     },
     {
       "id": "ctrun-okrun-chaozhou-2026",
@@ -470,212 +1053,9 @@
         21
       ],
       "status": "報名中",
+      "registrationDeadline": "",
+      "organizer": "",
       "url": "https://www.ctrun.com.tw/"
-    },
-    {
-      "id": "ctrun-nanzhuang-2026",
-      "type": "run",
-      "name": "2026 南庄山水悠遊行－山水路跑賽",
-      "city": "苗栗縣",
-      "place": "南庄鄉公有停車場",
-      "date": "2026-10-17",
-      "distances": [
-        4,
-        10,
-        21,
-        31
-      ],
-      "status": "報名中",
-      "url": "https://www.ctrun.com.tw/"
-    },
-    {
-      "id": "ctrun-longci-red-rabbit-2026",
-      "type": "run",
-      "name": "2026 龍崎文衡殿第三屆赤兔馬全國馬拉松",
-      "city": "台南市",
-      "place": "龍崎文衡殿",
-      "date": "2026-10-25",
-      "distances": [
-        5,
-        10,
-        21,
-        42
-      ],
-      "status": "報名中",
-      "url": "https://www.ctrun.com.tw/"
-    },
-    {
-      "id": "ctrun-caoxiedun-marathon-2026",
-      "type": "run",
-      "name": "2026 草鞋墩馬拉松",
-      "city": "南投縣",
-      "place": "草屯鎮九九峰氦氣球園區停車場",
-      "date": "2026-10-25",
-      "distances": [
-        5,
-        10,
-        22,
-        42.195
-      ],
-      "status": "報名中",
-      "url": "https://www.ctrun.com.tw/"
-    },
-    {
-      "id": "ctrun-zepro-hsinchu-2026",
-      "type": "run",
-      "name": "2026 ZEPRO RUN 全國半程馬拉松－新竹場",
-      "city": "新竹縣",
-      "place": "新竹縣體育場",
-      "date": "2026-11-08",
-      "distances": [
-        5.5,
-        10,
-        21
-      ],
-      "status": "報名中",
-      "url": "https://www.ctrun.com.tw/",
-      "registrationDeadline": "2026-06-04"
-    },
-    {
-      "id": "ctrun-taoyuan-baldcypress-2026",
-      "type": "run",
-      "name": "2026 桃園落羽松秘境馬拉松賽",
-      "city": "桃園市",
-      "place": "龍岡森林公園",
-      "date": "2026-11-22",
-      "distances": [
-        5,
-        11,
-        21,
-        42.195
-      ],
-      "status": "報名中",
-      "url": "https://www.ctrun.com.tw/"
-    },
-    {
-      "id": "ctrun-zepro-tainan-2026",
-      "type": "run",
-      "name": "2026 ZEPRO RUN 全國半程馬拉松－台南場",
-      "city": "台南市",
-      "place": "台南觀夕平台停車場",
-      "date": "2026-11-15",
-      "distances": [
-        3.5,
-        10,
-        21
-      ],
-      "status": "報名截止",
-      "url": "https://www.ctrun.com.tw/"
-    },
-    {
-      "id": "ctrun-taipei-half-marathon-2026",
-      "type": "run",
-      "name": "2026 台北國際半程馬拉松",
-      "city": "台北市",
-      "place": "大佳河濱公園圓形廣場",
-      "date": "2026-09-20",
-      "distances": [
-        4,
-        10,
-        21
-      ],
-      "status": "報名截止",
-      "url": "https://www.ctrun.com.tw/"
-    },
-    {
-      "id": "ctrun-chiayi-bike-day-2026",
-      "type": "bike",
-      "name": "2026 來嘉BIKE訪．騎聚好歡樂 嘉義市自行車日活動",
-      "city": "嘉義市",
-      "place": "蘭潭音樂噴泉",
-      "date": "2026-06-13",
-      "distances": [
-        6.4,
-        15.4
-      ],
-      "status": "報名截止",
-      "url": "https://www.ctrun.com.tw/"
-    },
-    {
-      "id": "irunner-tianzhong-marathon-2026",
-      "type": "run",
-      "name": "2026台灣米倉田中馬拉松",
-      "city": "彰化縣",
-      "place": "田中鎮景崧文化教育園區",
-      "date": "2026-11-08",
-      "distances": [
-        42.195,
-        21,
-        10
-      ],
-      "status": "登記當中",
-      "url": "https://irunner.biji.co/Tianzhong2026",
-      "registrationDeadline": "2026-06-15"
-    },
-    {
-      "id": "irunner-hsinchu-city-marathon-2026",
-      "type": "run",
-      "name": "2026新竹城市馬拉松",
-      "city": "新竹市",
-      "place": "樹林頭公園",
-      "date": "2026-12-06",
-      "distances": [
-        42.195,
-        21,
-        9,
-        4
-      ],
-      "status": "報名中",
-      "url": "https://irunner.biji.co/HSINCHUCITY2026",
-      "registrationDeadline": "2026-08-30"
-    },
-    {
-      "id": "irunner-keelung-half-marathon-2026",
-      "type": "run",
-      "name": "2026基隆半程馬拉松",
-      "city": "基隆市",
-      "place": "基隆國門廣場",
-      "date": "2026-09-20",
-      "distances": [
-        21,
-        9,
-        3
-      ],
-      "status": "報名中",
-      "url": "https://irunner.biji.co/2026Keelungmarathon",
-      "registrationDeadline": "2026-06-30"
-    },
-    {
-      "id": "irunner-sunmoonlake-marathon-2026",
-      "type": "run",
-      "name": "2026日月潭環湖馬拉松",
-      "city": "南投縣",
-      "place": "日月潭向山遊客中心",
-      "date": "2026-11-01",
-      "distances": [
-        42.195,
-        29,
-        6
-      ],
-      "status": "報名截止",
-      "url": "https://irunner.biji.co/sunmoonlakemarathon2026",
-      "registrationDeadline": "2026-05-06"
-    },
-    {
-      "id": "irunner-hualien-fuli-daylily-2026",
-      "type": "run",
-      "name": "2026花蓮富里六十石山金針花超半程馬拉松",
-      "city": "花蓮縣",
-      "place": "富里鄉六十石山",
-      "date": "2026-09-13",
-      "distances": [
-        21,
-        10,
-        5
-      ],
-      "status": "報名中",
-      "url": "https://irunner.biji.co/",
-      "registrationDeadline": "2026-07-10"
     },
     {
       "id": "irunner-puli-power-2026",
@@ -691,25 +1071,736 @@
         5
       ],
       "status": "報名中",
-      "url": "https://irunner.biji.co/",
-      "registrationDeadline": "2026-06-30"
+      "registrationDeadline": "2026-06-30",
+      "organizer": "",
+      "url": "https://irunner.biji.co/"
     },
     {
-      "id": "irunner-jiaoxi-hot-spring-marathon-2026",
+      "id": "baoming-tri-2026-tis-taoyuan-duathlon-2026",
+      "type": "tri",
+      "name": "2026 TIS桃園市第六屆鐵人兩項錦標賽",
+      "city": "桃園市",
+      "place": "詳見伊貝特活動頁",
+      "date": "2026-10-04",
+      "distances": [],
+      "status": "待公告",
+      "registrationDeadline": "",
+      "organizer": "",
+      "url": "https://bao-ming.com/eb/index"
+    },
+    {
+      "id": "baoming-crawl-2026-10-04-2026-xtrail-越野跑挑戰賽-貓空站-1wqbiup",
       "type": "run",
-      "name": "2026礁溪溫泉馬拉松",
-      "city": "宜蘭縣",
-      "place": "礁溪鄉",
-      "date": "2026-12-12",
+      "name": "2026 Xtrail 越野跑挑戰賽 – 貓空站",
+      "city": "待確認",
+      "place": "詳見伊貝特活動頁",
+      "date": "2026-10-04",
+      "distances": [],
+      "status": "待公告",
+      "registrationDeadline": "",
+      "organizer": "",
+      "url": "https://bao-ming.com/eb/content/6917"
+    },
+    {
+      "id": "baoming-crawl-2026-10-04-2026時代騎輪節-wheels-ride-festival-hss0ym",
+      "type": "bike",
+      "name": "2026時代騎輪節 Wheels Ride Festival",
+      "city": "待確認",
+      "place": "詳見伊貝特活動頁",
+      "date": "2026-10-04",
+      "distances": [],
+      "status": "待公告",
+      "registrationDeadline": "",
+      "organizer": "",
+      "url": "https://bao-ming.com/eb/content/6946"
+    },
+    {
+      "id": "taichung-bike-classic-2026",
+      "type": "bike",
+      "name": "台中經典百K自行車挑戰",
+      "city": "臺中市",
+      "place": "后里 / 東勢 / 新社",
+      "date": "2026-10-04",
       "distances": [
-        42.195,
+        50,
+        100
+      ],
+      "status": "待公告",
+      "registrationDeadline": "",
+      "organizer": "",
+      "url": "https://www.cyclist.org.tw/"
+    },
+    {
+      "id": "baoming-crawl-2026-10-04-宜蘭縣冬山河水岸馬拉松-1908vig",
+      "type": "run",
+      "name": "宜蘭縣冬山河水岸馬拉松",
+      "city": "宜蘭縣",
+      "place": "詳見伊貝特活動頁",
+      "date": "2026-10-04",
+      "distances": [
+        42.195
+      ],
+      "status": "待公告",
+      "registrationDeadline": "",
+      "organizer": "",
+      "url": "https://bao-ming.com/eb/content/6990"
+    },
+    {
+      "id": "baoming-crawl-2026-10-09-瘋系列第七屆中雙塔-1oan9ak",
+      "type": "bike",
+      "name": "瘋系列第七屆中雙塔",
+      "city": "台灣",
+      "place": "詳見伊貝特活動頁",
+      "date": "2026-10-09",
+      "distances": [],
+      "status": "待公告",
+      "registrationDeadline": "",
+      "organizer": "",
+      "url": "https://bao-ming.com/eb/content/6855"
+    },
+    {
+      "id": "baoming-crawl-2026-10-10-2026-ctau超馬系列賽-第二站-第十四屆開廣飛跑盃超級馬拉松-4eu6mh",
+      "type": "run",
+      "name": "2026 CTAU超馬系列賽 第二站 第十四屆開廣飛跑盃超級馬拉松",
+      "city": "待確認",
+      "place": "詳見伊貝特活動頁",
+      "date": "2026-10-10",
+      "distances": [
+        42.195
+      ],
+      "status": "待公告",
+      "registrationDeadline": "",
+      "organizer": "",
+      "url": "https://bao-ming.com/eb/content/7049"
+    },
+    {
+      "id": "taiwan-cycling-festival-2026",
+      "type": "bike",
+      "name": "騎遇福爾摩沙系列活動",
+      "city": "全台灣",
+      "place": "各縣市自行車路線",
+      "date": "2026-10-10",
+      "distances": [
+        20,
+        50,
+        100
+      ],
+      "status": "待公告",
+      "registrationDeadline": "",
+      "organizer": "",
+      "url": "https://taiwanbike.tw/"
+    },
+    {
+      "id": "baoming-crawl-2026-10-11-2026府北馬拉松-46laef",
+      "type": "run",
+      "name": "2026府北馬拉松",
+      "city": "台南市 / 台北市",
+      "place": "詳見伊貝特活動頁",
+      "date": "2026-10-11",
+      "distances": [
+        42.195
+      ],
+      "status": "待公告",
+      "registrationDeadline": "",
+      "organizer": "",
+      "url": "https://bao-ming.com/eb/content/6963"
+    },
+    {
+      "id": "baoming-crawl-2026-10-17-115年運動i臺灣2-0計畫-臺中市潭子區旱溪水岸慢跑健走嘉年華-1vc032h",
+      "type": "run",
+      "name": "115年運動i臺灣2.0計畫-臺中市潭子區旱溪水岸慢跑健走嘉年華",
+      "city": "臺中市",
+      "place": "詳見伊貝特活動頁",
+      "date": "2026-10-17",
+      "distances": [],
+      "status": "待公告",
+      "registrationDeadline": "",
+      "organizer": "",
+      "url": "https://bao-ming.com/eb/content/7066"
+    },
+    {
+      "id": "ctrun-nanzhuang-2026",
+      "type": "run",
+      "name": "2026 南庄山水悠遊行－山水路跑賽",
+      "city": "苗栗縣",
+      "place": "南庄鄉公有停車場",
+      "date": "2026-10-17",
+      "distances": [
+        4,
+        10,
+        21,
+        31
+      ],
+      "status": "報名中",
+      "registrationDeadline": "",
+      "organizer": "",
+      "url": "https://www.ctrun.com.tw/"
+    },
+    {
+      "id": "baoming-pocari-sweat-run-2026",
+      "type": "run",
+      "name": "2026 POCARI SWEAT RUN 寶礦力路跑",
+      "city": "臺北市",
+      "place": "大佳河濱公園蛋型廣場",
+      "date": "2026-10-18",
+      "distances": [
+        21,
+        10,
+        4
+      ],
+      "status": "報名中",
+      "registrationDeadline": "2026-08-14",
+      "organizer": "",
+      "url": "https://psr2026.pocari.com.tw/"
+    },
+    {
+      "id": "baoming-crawl-2026-10-18-2026-pocari-sweat-run寶礦力路跑-4ljv1i",
+      "type": "run",
+      "name": "2026 POCARI SWEAT RUN寶礦力路跑",
+      "city": "待確認",
+      "place": "詳見伊貝特活動頁",
+      "date": "2026-10-18",
+      "distances": [],
+      "status": "待公告",
+      "registrationDeadline": "",
+      "organizer": "",
+      "url": "https://bao-ming.com/eb/content/7013"
+    },
+    {
+      "id": "baoming-crawl-2026-10-18-2026桃園市第六屆大觀盃-珍珠海岸超半程馬拉松-18rlsv7",
+      "type": "run",
+      "name": "2026桃園市第六屆大觀盃 珍珠海岸超半程馬拉松",
+      "city": "桃園市",
+      "place": "詳見伊貝特活動頁",
+      "date": "2026-10-18",
+      "distances": [
+        21
+      ],
+      "status": "待公告",
+      "registrationDeadline": "",
+      "organizer": "",
+      "url": "https://bao-ming.com/eb/content/7047"
+    },
+    {
+      "id": "baoming-crawl-2026-10-18-2026第三屆新竹五指山觀音媽馬拉松-dkjcfj",
+      "type": "run",
+      "name": "2026第三屆新竹五指山觀音媽馬拉松",
+      "city": "新竹縣/市",
+      "place": "詳見伊貝特活動頁",
+      "date": "2026-10-18",
+      "distances": [
+        42.195
+      ],
+      "status": "待公告",
+      "registrationDeadline": "",
+      "organizer": "",
+      "url": "https://bao-ming.com/eb/content/7021"
+    },
+    {
+      "id": "baoming-tri-2026-taitung-super-3-2026",
+      "type": "tri",
+      "name": "2026臺東巴歌浪超鐵Taitung Super 3",
+      "city": "臺東縣",
+      "place": "詳見伊貝特活動頁",
+      "date": "2026-10-18",
+      "distances": [],
+      "status": "待公告",
+      "registrationDeadline": "",
+      "organizer": "",
+      "url": "https://bao-ming.com/eb/index"
+    },
+    {
+      "id": "baoming-crawl-2026-10-24-2026北埔膨風路跑嘉年華-a29ew",
+      "type": "run",
+      "name": "2026北埔膨風路跑嘉年華",
+      "city": "待確認",
+      "place": "詳見伊貝特活動頁",
+      "date": "2026-10-24",
+      "distances": [],
+      "status": "待公告",
+      "registrationDeadline": "",
+      "organizer": "",
+      "url": "https://bao-ming.com/eb/content/7046"
+    },
+    {
+      "id": "baoming-crawl-2026-10-24-2026第十二屆-點亮星光-愛心永傳-公益路跑-1ymww79",
+      "type": "run",
+      "name": "2026第十二屆 “點亮星光、愛心永傳”公益路跑",
+      "city": "待確認",
+      "place": "詳見伊貝特活動頁",
+      "date": "2026-10-24",
+      "distances": [],
+      "status": "待公告",
+      "registrationDeadline": "",
+      "organizer": "",
+      "url": "https://bao-ming.com/eb/content/6870"
+    },
+    {
+      "id": "ctrun-caoxiedun-marathon-2026",
+      "type": "run",
+      "name": "2026 草鞋墩馬拉松",
+      "city": "南投縣",
+      "place": "草屯鎮九九峰氦氣球園區停車場",
+      "date": "2026-10-25",
+      "distances": [
+        5,
+        10,
+        22,
+        42.195
+      ],
+      "status": "報名中",
+      "registrationDeadline": "",
+      "organizer": "",
+      "url": "https://www.ctrun.com.tw/"
+    },
+    {
+      "id": "ctrun-longci-red-rabbit-2026",
+      "type": "run",
+      "name": "2026 龍崎文衡殿第三屆赤兔馬全國馬拉松",
+      "city": "臺南市",
+      "place": "龍崎文衡殿",
+      "date": "2026-10-25",
+      "distances": [
+        5,
+        10,
+        21,
+        42
+      ],
+      "status": "報名中",
+      "registrationDeadline": "",
+      "organizer": "",
+      "url": "https://www.ctrun.com.tw/"
+    },
+    {
+      "id": "irunner-hualien-valley-half-2026",
+      "type": "run",
+      "name": "2026花蓮太平洋縱谷半程馬拉松",
+      "city": "花蓮縣",
+      "place": "花蓮太平洋縱谷",
+      "date": "2026-10-25",
+      "distances": [
         21,
         10,
         5
       ],
       "status": "報名中",
-      "url": "https://irunner.biji.co/",
-      "registrationDeadline": "2026-08-31"
+      "registrationDeadline": "",
+      "organizer": "",
+      "url": "https://irunner.biji.co/"
+    },
+    {
+      "id": "sun-moon-lake-marathon-2026",
+      "type": "run",
+      "name": "日月潭環湖馬拉松",
+      "city": "南投縣",
+      "place": "日月潭",
+      "date": "2026-10-25",
+      "distances": [
+        42.195,
+        29,
+        12
+      ],
+      "status": "待公告",
+      "registrationDeadline": "",
+      "organizer": "",
+      "url": "https://www.sunmoonlakemarathon.com/"
+    },
+    {
+      "id": "eva-air-run-2026",
+      "type": "run",
+      "name": "長榮航空城市觀光半程馬拉松",
+      "city": "臺北市",
+      "place": "總統府前廣場周邊",
+      "date": "2026-10-25",
+      "distances": [
+        21.0975,
+        10,
+        3
+      ],
+      "status": "待公告",
+      "registrationDeadline": "",
+      "organizer": "",
+      "url": "https://evaairrun.com/"
+    },
+    {
+      "id": "baoming-crawl-2026-10-26-2026-華陀為高雄公益路跑-4n9whq",
+      "type": "run",
+      "name": "2026 華陀為高雄公益路跑",
+      "city": "高雄市",
+      "place": "詳見伊貝特活動頁",
+      "date": "2026-10-26",
+      "distances": [],
+      "status": "待公告",
+      "registrationDeadline": "",
+      "organizer": "",
+      "url": "https://bao-ming.com/eb/content/6913"
+    },
+    {
+      "id": "taiwan-kom-2026",
+      "type": "bike",
+      "name": "臺灣自行車登山王挑戰",
+      "city": "花蓮縣",
+      "place": "七星潭至武嶺",
+      "date": "2026-10-30",
+      "distances": [
+        105
+      ],
+      "status": "待公告",
+      "registrationDeadline": "",
+      "organizer": "",
+      "url": "https://www.taiwankom.org/"
+    },
+    {
+      "id": "irunner-dan-cup-mtb-enduro-2026",
+      "type": "bike",
+      "name": "2026 Dan Cup - Taiwan MTB Enduro",
+      "city": "台灣",
+      "place": "詳見 iRunner 賽事頁",
+      "date": "2026-11-01",
+      "distances": [
+        30
+      ],
+      "status": "待公告",
+      "registrationDeadline": "",
+      "organizer": "",
+      "url": "https://irunner.biji.co/"
+    },
+    {
+      "id": "tri-ironman-703-kenting-2026",
+      "type": "tri",
+      "name": "2026 IRONMAN 70.3 Kenting 墾丁國際鐵人三項賽",
+      "city": "屏東縣",
+      "place": "墾丁福華渡假飯店周邊",
+      "date": "2026-11-01",
+      "distances": [
+        113
+      ],
+      "status": "報名中",
+      "registrationDeadline": "",
+      "organizer": "",
+      "url": "https://eventgo.tw/event/4b1f652e-d763-4207-a485-cb85b586110b"
+    },
+    {
+      "id": "baoming-crawl-2026-11-01-2026-nb-10k-城市路跑系列賽-台北站-1fivzw1",
+      "type": "run",
+      "name": "2026 NB 10K 城市路跑系列賽-台北站",
+      "city": "臺北市",
+      "place": "詳見伊貝特活動頁",
+      "date": "2026-11-01",
+      "distances": [
+        10
+      ],
+      "status": "待公告",
+      "registrationDeadline": "",
+      "organizer": "",
+      "url": "https://bao-ming.com/eb/content/6998"
+    },
+    {
+      "id": "irunner-sunmoonlake-marathon-2026",
+      "type": "run",
+      "name": "2026日月潭環湖馬拉松",
+      "city": "南投縣",
+      "place": "日月潭向山遊客中心",
+      "date": "2026-11-01",
+      "distances": [
+        42.195,
+        29,
+        6
+      ],
+      "status": "報名截止",
+      "registrationDeadline": "2026-05-06",
+      "organizer": "",
+      "url": "https://irunner.biji.co/sunmoonlakemarathon2026"
+    },
+    {
+      "id": "baoming-crawl-2026-11-01-2026菊島澎湖跨海馬拉松-13hebvj",
+      "type": "run",
+      "name": "2026菊島澎湖跨海馬拉松",
+      "city": "澎湖縣",
+      "place": "詳見伊貝特活動頁",
+      "date": "2026-11-01",
+      "distances": [
+        42.195
+      ],
+      "status": "待公告",
+      "registrationDeadline": "",
+      "organizer": "",
+      "url": "https://bao-ming.com/eb/content/6984"
+    },
+    {
+      "id": "baoming-crawl-2026-11-01-跑吧-孩子-2026知本溫泉公益馬拉松-9faxch",
+      "type": "run",
+      "name": "跑吧！孩子 2026知本溫泉公益馬拉松",
+      "city": "待確認",
+      "place": "詳見伊貝特活動頁",
+      "date": "2026-11-01",
+      "distances": [
+        42.195
+      ],
+      "status": "待公告",
+      "registrationDeadline": "",
+      "organizer": "",
+      "url": "https://bao-ming.com/eb/content/6997"
+    },
+    {
+      "id": "taichung-city-marathon-2026",
+      "type": "run",
+      "name": "臺中國際馬拉松",
+      "city": "臺中市",
+      "place": "台中市區",
+      "date": "2026-11-01",
+      "distances": [
+        42.195,
+        21.0975,
+        10
+      ],
+      "status": "待公告",
+      "registrationDeadline": "",
+      "organizer": "",
+      "url": "https://www.ibodygo.com.tw/"
+    },
+    {
+      "id": "twb-north-south-360-2026",
+      "type": "bike",
+      "name": "第13屆 2026 TWB 北高360",
+      "city": "新北市 / 高雄市",
+      "place": "北台灣至高雄長距離路線",
+      "date": "2026-11-06",
+      "distances": [
+        360
+      ],
+      "status": "待公告",
+      "registrationDeadline": "",
+      "organizer": "",
+      "url": "https://twbike.org/news/?act=data&id=372"
+    },
+    {
+      "id": "baoming-crawl-2026-11-07-2026-jo愛run親子路跑嘉年華會-13yorfn",
+      "type": "run",
+      "name": "2026 Jo愛Run親子路跑嘉年華會",
+      "city": "待確認",
+      "place": "詳見伊貝特活動頁",
+      "date": "2026-11-07",
+      "distances": [],
+      "status": "待公告",
+      "registrationDeadline": "",
+      "organizer": "",
+      "url": "https://bao-ming.com/eb/content/6960"
+    },
+    {
+      "id": "taroko-gorge-marathon-2026",
+      "type": "run",
+      "name": "太魯閣峽谷馬拉松",
+      "city": "花蓮縣",
+      "place": "太魯閣國家公園",
+      "date": "2026-11-07",
+      "distances": [
+        42.195,
+        21.0975,
+        12
+      ],
+      "status": "待公告",
+      "registrationDeadline": "",
+      "organizer": "",
+      "url": "https://www.taroko-marathon.com.tw/"
+    },
+    {
+      "id": "formosa-900-2026",
+      "type": "bike",
+      "name": "臺灣自行車節 Formosa 900",
+      "city": "全台灣",
+      "place": "環島路線",
+      "date": "2026-11-07",
+      "distances": [
+        900
+      ],
+      "status": "即將開放",
+      "registrationDeadline": "",
+      "organizer": "",
+      "url": "https://taiwanbike.tw/"
+    },
+    {
+      "id": "ctrun-zepro-hsinchu-2026",
+      "type": "run",
+      "name": "2026 ZEPRO RUN 全國半程馬拉松－新竹場",
+      "city": "新竹縣",
+      "place": "新竹縣體育場",
+      "date": "2026-11-08",
+      "distances": [
+        5.5,
+        10,
+        21
+      ],
+      "status": "報名中",
+      "registrationDeadline": "2026-06-04",
+      "organizer": "",
+      "url": "https://www.ctrun.com.tw/"
+    },
+    {
+      "id": "irunner-tianzhong-marathon-2026",
+      "type": "run",
+      "name": "2026台灣米倉田中馬拉松",
+      "city": "彰化縣",
+      "place": "田中鎮景崧文化教育園區",
+      "date": "2026-11-08",
+      "distances": [
+        42.195,
+        21,
+        10
+      ],
+      "status": "登記當中",
+      "registrationDeadline": "2026-06-15",
+      "organizer": "",
+      "url": "https://irunner.biji.co/Tianzhong2026"
+    },
+    {
+      "id": "sun-moon-lake-bike-2026",
+      "type": "bike",
+      "name": "日月潭 Come! Bikeday",
+      "city": "南投縣",
+      "place": "日月潭環湖",
+      "date": "2026-11-08",
+      "distances": [
+        30,
+        60,
+        90
+      ],
+      "status": "待公告",
+      "registrationDeadline": "",
+      "organizer": "",
+      "url": "https://www.sunmoonlake.gov.tw/"
+    },
+    {
+      "id": "baoming-tri-2026-forcekids-tainan-2026",
+      "type": "tri",
+      "name": "ForceKids 小鐵人挑戰賽-台南站 (2026)",
+      "city": "臺南市",
+      "place": "詳見伊貝特活動頁",
+      "date": "2026-11-08",
+      "distances": [],
+      "status": "待公告",
+      "registrationDeadline": "",
+      "organizer": "",
+      "url": "https://bao-ming.com/eb/index"
+    },
+    {
+      "id": "tba-north-south-360-2026",
+      "type": "bike",
+      "name": "2026 TBA北高360",
+      "city": "新北市 / 高雄市",
+      "place": "八里廖添丁廟至高雄左營屏山國小",
+      "date": "2026-11-13",
+      "distances": [
+        360
+      ],
+      "status": "報名中",
+      "registrationDeadline": "",
+      "organizer": "",
+      "url": "https://www.runbase.tw/blogs/road-run/tba360"
+    },
+    {
+      "id": "baoming-crawl-2026-11-13-2026tba北高360自行車認證-1qjdv9p",
+      "type": "bike",
+      "name": "2026TBA北高360自行車認證",
+      "city": "新北市 / 高雄市",
+      "place": "詳見伊貝特活動頁",
+      "date": "2026-11-13",
+      "distances": [],
+      "status": "待公告",
+      "registrationDeadline": "",
+      "organizer": "",
+      "url": "https://bao-ming.com/eb/content/6831"
+    },
+    {
+      "id": "baoming-crawl-2026-11-13-2026tba四極620自行車認證-16m77j",
+      "type": "bike",
+      "name": "2026TBA四極620自行車認證",
+      "city": "待確認",
+      "place": "詳見伊貝特活動頁",
+      "date": "2026-11-13",
+      "distances": [],
+      "status": "待公告",
+      "registrationDeadline": "",
+      "organizer": "",
+      "url": "https://bao-ming.com/eb/content/6833"
+    },
+    {
+      "id": "baoming-crawl-2026-11-14-2026tba雙塔520自行車認證-55hrgi",
+      "type": "bike",
+      "name": "2026TBA雙塔520自行車認證",
+      "city": "台灣",
+      "place": "詳見伊貝特活動頁",
+      "date": "2026-11-14",
+      "distances": [],
+      "status": "待公告",
+      "registrationDeadline": "",
+      "organizer": "",
+      "url": "https://bao-ming.com/eb/content/6832"
+    },
+    {
+      "id": "baoming-crawl-2026-11-15-2026-蘆洲觀音山馬拉松-mvtocz",
+      "type": "run",
+      "name": "2026 蘆洲觀音山馬拉松",
+      "city": "待確認",
+      "place": "詳見伊貝特活動頁",
+      "date": "2026-11-15",
+      "distances": [
+        42.195
+      ],
+      "status": "待公告",
+      "registrationDeadline": "",
+      "organizer": "",
+      "url": "https://bao-ming.com/eb/content/7012"
+    },
+    {
+      "id": "ctrun-zepro-tainan-2026",
+      "type": "run",
+      "name": "2026 ZEPRO RUN 全國半程馬拉松－台南場",
+      "city": "臺南市",
+      "place": "台南觀夕平台停車場",
+      "date": "2026-11-15",
+      "distances": [
+        3.5,
+        10,
+        21
+      ],
+      "status": "報名截止",
+      "registrationDeadline": "",
+      "organizer": "",
+      "url": "https://www.ctrun.com.tw/"
+    },
+    {
+      "id": "penghu-cross-sea-2026",
+      "type": "run",
+      "name": "澎湖跨海馬拉松",
+      "city": "澎湖縣",
+      "place": "西嶼 / 馬公",
+      "date": "2026-11-15",
+      "distances": [
+        42.195,
+        21.0975,
+        11,
+        5
+      ],
+      "status": "待公告",
+      "registrationDeadline": "",
+      "organizer": "",
+      "url": "https://www.penghu-nsa.gov.tw/"
+    },
+    {
+      "id": "baoming-crawl-2026-11-20-2026-ctau超馬系列賽-第四站-宜蘭冬山河超級馬拉松-fdnhwc",
+      "type": "run",
+      "name": "2026 CTAU超馬系列賽--第四站 宜蘭冬山河超級馬拉松",
+      "city": "宜蘭縣",
+      "place": "詳見伊貝特活動頁",
+      "date": "2026-11-20",
+      "distances": [
+        42.195
+      ],
+      "status": "待公告",
+      "registrationDeadline": "",
+      "organizer": "",
+      "url": "https://bao-ming.com/eb/content/7003"
     },
     {
       "id": "irunner-mother-marathon-beigang-2026",
@@ -725,14 +1816,166 @@
         5
       ],
       "status": "報名中",
-      "url": "https://irunner.biji.co/",
-      "registrationDeadline": "2026-08-31"
+      "registrationDeadline": "2026-08-31",
+      "organizer": "",
+      "url": "https://irunner.biji.co/"
+    },
+    {
+      "id": "baoming-crawl-2026-11-21-2026年東石全國馬拉松-1vbxtpn",
+      "type": "run",
+      "name": "2026年東石全國馬拉松",
+      "city": "嘉義縣",
+      "place": "詳見伊貝特活動頁",
+      "date": "2026-11-21",
+      "distances": [
+        42.195
+      ],
+      "status": "待公告",
+      "registrationDeadline": "",
+      "organizer": "",
+      "url": "https://bao-ming.com/eb/content/6898"
+    },
+    {
+      "id": "baoming-crawl-2026-11-21-國立臺灣體育運動大學第34屆駱駝盃路跑賽-9jnyyo",
+      "type": "run",
+      "name": "國立臺灣體育運動大學第34屆駱駝盃路跑賽",
+      "city": "待確認",
+      "place": "詳見伊貝特活動頁",
+      "date": "2026-11-21",
+      "distances": [],
+      "status": "待公告",
+      "registrationDeadline": "",
+      "organizer": "",
+      "url": "https://bao-ming.com/eb/content/7016"
+    },
+    {
+      "id": "ctrun-taoyuan-baldcypress-2026",
+      "type": "run",
+      "name": "2026 桃園落羽松秘境馬拉松賽",
+      "city": "桃園市",
+      "place": "龍岡森林公園",
+      "date": "2026-11-22",
+      "distances": [
+        5,
+        11,
+        21,
+        42.195
+      ],
+      "status": "報名中",
+      "registrationDeadline": "",
+      "organizer": "",
+      "url": "https://www.ctrun.com.tw/"
+    },
+    {
+      "id": "baoming-tri-2026-force-trifactor-tainan-2026",
+      "type": "tri",
+      "name": "2026FORCE x Trifactor台南鐵人三項賽",
+      "city": "臺南市",
+      "place": "詳見伊貝特活動頁",
+      "date": "2026-11-22",
+      "distances": [],
+      "status": "待公告",
+      "registrationDeadline": "",
+      "organizer": "",
+      "url": "https://bao-ming.com/eb/index"
+    },
+    {
+      "id": "ns-run-half-marathon-2026",
+      "type": "run",
+      "name": "NS RUN 南山人壽半程馬拉松",
+      "city": "臺北市",
+      "place": "總統府至大佳河濱公園",
+      "date": "2026-11-22",
+      "distances": [
+        21.0975,
+        10,
+        3
+      ],
+      "status": "報名中",
+      "registrationDeadline": "",
+      "organizer": "",
+      "url": "https://www.nanshanrun.com/rules-and-regulations.html"
+    },
+    {
+      "id": "baoming-crawl-2026-11-29-2026-第14屆台南秋季馬拉松-1gy8q2e",
+      "type": "run",
+      "name": "2026 第14屆台南秋季馬拉松",
+      "city": "臺南市",
+      "place": "詳見伊貝特活動頁",
+      "date": "2026-11-29",
+      "distances": [
+        42.195
+      ],
+      "status": "待公告",
+      "registrationDeadline": "",
+      "organizer": "",
+      "url": "https://bao-ming.com/eb/content/6989"
+    },
+    {
+      "id": "baoming-crawl-2026-11-29-2026-garmin-run-馬拉松系列賽-臺北站-1wo07fz",
+      "type": "run",
+      "name": "2026 Garmin Run 馬拉松系列賽 - 臺北站",
+      "city": "臺北市",
+      "place": "詳見伊貝特活動頁",
+      "date": "2026-11-29",
+      "distances": [
+        42.195
+      ],
+      "status": "待公告",
+      "registrationDeadline": "",
+      "organizer": "",
+      "url": "https://bao-ming.com/eb/content/7032"
+    },
+    {
+      "id": "baoming-crawl-2026-12-05-2026第五屆台大土木盃-校園之美路跑-5ix1ir",
+      "type": "run",
+      "name": "2026第五屆台大土木盃~校園之美路跑",
+      "city": "待確認",
+      "place": "詳見伊貝特活動頁",
+      "date": "2026-12-05",
+      "distances": [],
+      "status": "待公告",
+      "registrationDeadline": "",
+      "organizer": "",
+      "url": "https://bao-ming.com/eb/content/6979"
+    },
+    {
+      "id": "tri-lava-dapengwan-2026",
+      "type": "tri",
+      "name": "2026 LEXUS LAVA 大鵬灣鐵人賽",
+      "city": "屏東縣",
+      "place": "大鵬灣濱灣碼頭",
+      "date": "2026-12-06",
+      "distances": [
+        51.5,
+        50.3,
+        29.8
+      ],
+      "status": "待公告",
+      "registrationDeadline": "",
+      "organizer": "",
+      "url": "https://running.biji.co/index.php?act=info&cid=12846&q=competition&subtitle=2026+LEXUS+LAVA+%E5%A4%A7%E9%B5%AC%E7%81%A3%E9%90%B5%E4%BA%BA%E8%B3%BD"
+    },
+    {
+      "id": "baoming-crawl-2026-12-06-2026三星安農溪馬拉松嘉年華-1x1aedv",
+      "type": "run",
+      "name": "2026三星安農溪馬拉松嘉年華",
+      "city": "待確認",
+      "place": "詳見伊貝特活動頁",
+      "date": "2026-12-06",
+      "distances": [
+        42.195
+      ],
+      "status": "待公告",
+      "registrationDeadline": "",
+      "organizer": "",
+      "url": "https://bao-ming.com/eb/content/7051"
     },
     {
       "id": "irunner-laichen-taichung-marathon-2026",
       "type": "run",
       "name": "2026第二屆麗晨臺中國際馬拉松",
-      "city": "台中市",
+      "city": "臺中市",
       "place": "台中市",
       "date": "2026-12-06",
       "distances": [
@@ -742,82 +1985,283 @@
         5
       ],
       "status": "報名中",
-      "url": "https://irunner.biji.co/",
-      "registrationDeadline": "2026-07-15"
+      "registrationDeadline": "2026-07-15",
+      "organizer": "",
+      "url": "https://irunner.biji.co/"
     },
     {
-      "id": "irunner-hualien-valley-half-2026",
+      "id": "irunner-hsinchu-city-marathon-2026",
       "type": "run",
-      "name": "2026花蓮太平洋縱谷半程馬拉松",
-      "city": "花蓮縣",
-      "place": "花蓮太平洋縱谷",
-      "date": "2026-10-25",
+      "name": "2026新竹城市馬拉松",
+      "city": "新竹市",
+      "place": "樹林頭公園",
+      "date": "2026-12-06",
       "distances": [
+        42.195,
+        21,
+        9,
+        4
+      ],
+      "status": "報名中",
+      "registrationDeadline": "2026-08-30",
+      "organizer": "",
+      "url": "https://irunner.biji.co/HSINCHUCITY2026"
+    },
+    {
+      "id": "baoming-crawl-2026-12-12-2026-tigerrun-19w9nhs",
+      "type": "run",
+      "name": "2026  tigerrun",
+      "city": "待確認",
+      "place": "詳見伊貝特活動頁",
+      "date": "2026-12-12",
+      "distances": [],
+      "status": "待公告",
+      "registrationDeadline": "",
+      "organizer": "",
+      "url": "https://bao-ming.com/eb/content/7034"
+    },
+    {
+      "id": "irunner-jiaoxi-hot-spring-marathon-2026",
+      "type": "run",
+      "name": "2026礁溪溫泉馬拉松",
+      "city": "宜蘭縣",
+      "place": "礁溪鄉",
+      "date": "2026-12-12",
+      "distances": [
+        42.195,
         21,
         10,
         5
       ],
       "status": "報名中",
+      "registrationDeadline": "2026-08-31",
+      "organizer": "",
       "url": "https://irunner.biji.co/"
     },
     {
-      "id": "irunner-eastcity-hehuanshan-trail-2026",
+      "id": "baoming-crawl-2026-12-19-2026-ctau超馬系列賽-第一站-北宜公路超級馬拉松-1pb42ty",
       "type": "run",
-      "name": "2026東城盃合歡山越野馬拉松",
-      "city": "南投縣",
-      "place": "合歡山",
-      "date": "2026-09-04",
+      "name": "2026 CTAU超馬系列賽 - 第一站 北宜公路超級馬拉松",
+      "city": "待確認",
+      "place": "詳見伊貝特活動頁",
+      "date": "2026-12-19",
       "distances": [
-        42,
-        21,
-        10
-      ],
-      "status": "報名中",
-      "url": "https://irunner.biji.co/",
-      "registrationDeadline": "2026-06-15"
-    },
-    {
-      "id": "irunner-hualien-ride-journal-2026",
-      "type": "bike",
-      "name": "花蓮山海騎遇記自行車日｜2026 Hualien Ride Journal",
-      "city": "花蓮縣",
-      "place": "花蓮山海路線",
-      "date": "2026-07-01",
-      "distances": [
-        30,
-        60,
-        100
-      ],
-      "status": "報名中",
-      "url": "https://irunner.biji.co/"
-    },
-    {
-      "id": "irunner-guangfu-bike-mataian-2026",
-      "type": "bike",
-      "name": "跟著單車小D 揪愛騎：2026慢遊光復，探索馬太鞍之美！",
-      "city": "花蓮縣",
-      "place": "光復鄉馬太鞍",
-      "date": "2026-06-27",
-      "distances": [
-        20,
-        40
-      ],
-      "status": "報名中",
-      "url": "https://irunner.biji.co/",
-      "registrationDeadline": "2026-06-24"
-    },
-    {
-      "id": "irunner-dan-cup-mtb-enduro-2026",
-      "type": "bike",
-      "name": "2026 Dan Cup - Taiwan MTB Enduro",
-      "city": "台灣",
-      "place": "詳見 iRunner 賽事頁",
-      "date": "2026-11-01",
-      "distances": [
-        30
+        42.195
       ],
       "status": "待公告",
-      "url": "https://irunner.biji.co/"
+      "registrationDeadline": "",
+      "organizer": "",
+      "url": "https://bao-ming.com/eb/content/6993"
+    },
+    {
+      "id": "baoming-crawl-2026-12-20-2026南鯤鯓馬拉松-1b12w9o",
+      "type": "run",
+      "name": "2026南鯤鯓馬拉松",
+      "city": "待確認",
+      "place": "詳見伊貝特活動頁",
+      "date": "2026-12-20",
+      "distances": [
+        42.195
+      ],
+      "status": "待公告",
+      "registrationDeadline": "",
+      "organizer": "",
+      "url": "https://bao-ming.com/eb/content/7025"
+    },
+    {
+      "id": "taipei-marathon-2026",
+      "type": "run",
+      "name": "台北馬拉松",
+      "city": "臺北市",
+      "place": "台北市政府周邊",
+      "date": "2026-12-20",
+      "distances": [
+        42.195,
+        21.0975
+      ],
+      "status": "待公告",
+      "registrationDeadline": "",
+      "organizer": "",
+      "url": "https://www.taipeicitymarathon.com/"
+    },
+    {
+      "id": "kaohsiung-marathon-2027",
+      "type": "run",
+      "name": "高雄富邦馬拉松",
+      "city": "高雄市",
+      "place": "高雄市區",
+      "date": "2027-01-10",
+      "distances": [
+        42.195,
+        21.0975,
+        10,
+        5
+      ],
+      "status": "待公告",
+      "registrationDeadline": "",
+      "organizer": "",
+      "url": "https://www.khm.com.tw/"
+    },
+    {
+      "id": "baoming-crawl-2027-01-17-2027新竹縣尖石鄉鎮西堡王者之路-光明-火-超級馬拉松-2r6q0o",
+      "type": "run",
+      "name": "2027新竹縣尖石鄉鎮西堡王者之路~光明(火)超級馬拉松",
+      "city": "新竹縣/市",
+      "place": "詳見伊貝特活動頁",
+      "date": "2027-01-17",
+      "distances": [
+        42.195
+      ],
+      "status": "待公告",
+      "registrationDeadline": "",
+      "organizer": "",
+      "url": "https://bao-ming.com/eb/content/7052"
+    },
+    {
+      "id": "kinmen-marathon-2027",
+      "type": "run",
+      "name": "金門馬拉松",
+      "city": "金門縣",
+      "place": "金門縣立體育場",
+      "date": "2027-01-17",
+      "distances": [
+        42.195,
+        21.0975,
+        11.2,
+        5
+      ],
+      "status": "待公告",
+      "registrationDeadline": "",
+      "organizer": "",
+      "url": "https://kinmenmarathon.com/"
+    },
+    {
+      "id": "baoming-crawl-2027-01-23-2027-ctau超馬系列賽-第三站-陽明山超級馬拉松-1nmgojs",
+      "type": "run",
+      "name": "2027 CTAU超馬系列賽-第三站 陽明山超級馬拉松",
+      "city": "待確認",
+      "place": "詳見伊貝特活動頁",
+      "date": "2027-01-23",
+      "distances": [
+        42.195
+      ],
+      "status": "待公告",
+      "registrationDeadline": "",
+      "organizer": "",
+      "url": "https://bao-ming.com/eb/content/7028"
+    },
+    {
+      "id": "baoming-crawl-2027-02-14-2027台灣環島跑者圓夢計畫-火車站環島-1csyrdh",
+      "type": "run",
+      "name": "2027台灣環島跑者圓夢計畫Ⅲ(火車站環島)",
+      "city": "待確認",
+      "place": "詳見伊貝特活動頁",
+      "date": "2027-02-14",
+      "distances": [],
+      "status": "待公告",
+      "registrationDeadline": "",
+      "organizer": "",
+      "url": "https://bao-ming.com/eb/content/7011"
+    },
+    {
+      "id": "baoming-crawl-2027-02-27-瘋系列第八屆東三塔-東雙塔-東四塔-東環島-挑戰-o6ojt7",
+      "type": "bike",
+      "name": "瘋系列第八屆東三塔/東雙塔(東四塔/東環島)挑戰",
+      "city": "台灣東部",
+      "place": "詳見伊貝特活動頁",
+      "date": "2027-02-27",
+      "distances": [],
+      "status": "待公告",
+      "registrationDeadline": "",
+      "organizer": "",
+      "url": "https://bao-ming.com/eb/content/6954"
+    },
+    {
+      "id": "tainan-ancient-capital-2027",
+      "type": "run",
+      "name": "臺南古都國際半程馬拉松",
+      "city": "臺南市",
+      "place": "台南市政府 / 安平",
+      "date": "2027-03-07",
+      "distances": [
+        21.0975,
+        10,
+        5
+      ],
+      "status": "待公告",
+      "registrationDeadline": "",
+      "organizer": "",
+      "url": "https://www.sportsnet.org.tw/"
+    },
+    {
+      "id": "baoming-tri-2027-forcekids-taipei-2027",
+      "type": "tri",
+      "name": "ForceKids 小鐵人挑戰賽-大台北站 (2027)",
+      "city": "新北市 / 台北市",
+      "place": "詳見伊貝特活動頁",
+      "date": "2027-03-07",
+      "distances": [],
+      "status": "待公告",
+      "registrationDeadline": "",
+      "organizer": "",
+      "url": "https://bao-ming.com/eb/content/7058"
+    },
+    {
+      "id": "baoming-tri-2027-lava-race-park-2027",
+      "type": "tri",
+      "name": "2027 LAVA 玩賽樂園",
+      "city": "待確認",
+      "place": "詳見伊貝特活動頁",
+      "date": "2027-03-12",
+      "distances": [],
+      "status": "待公告",
+      "registrationDeadline": "",
+      "organizer": "",
+      "url": "https://bao-ming.com/eb/index"
+    },
+    {
+      "id": "baoming-crawl-2027-03-14-2027-lava-玩賽樂園350自行車挑戰-1efjtr7",
+      "type": "bike",
+      "name": "2027 LAVA 玩賽樂園350自行車挑戰",
+      "city": "待確認",
+      "place": "詳見伊貝特活動頁",
+      "date": "2027-03-14",
+      "distances": [],
+      "status": "待公告",
+      "registrationDeadline": "",
+      "organizer": "",
+      "url": "https://bao-ming.com/eb/content/6972"
+    },
+    {
+      "id": "tour-de-taiwan-2027",
+      "type": "bike",
+      "name": "國際自由車環台公路大賽",
+      "city": "全台灣",
+      "place": "多站城市路線",
+      "date": "2027-03-14",
+      "distances": [
+        600
+      ],
+      "status": "待公告",
+      "registrationDeadline": "",
+      "organizer": "",
+      "url": "https://www.tourdetaiwan.org.tw/"
+    },
+    {
+      "id": "wanjinshi-2027",
+      "type": "run",
+      "name": "新北市萬金石馬拉松",
+      "city": "新北市",
+      "place": "萬里 / 金山 / 石門",
+      "date": "2027-03-21",
+      "distances": [
+        42.195,
+        10
+      ],
+      "status": "待公告",
+      "registrationDeadline": "",
+      "organizer": "",
+      "url": "https://wanjinshi-marathon.com.tw/"
     }
   ]
 }
