@@ -577,7 +577,12 @@
         grid-template-columns: 1fr;
       }
 
+      main {
+        order: 1;
+      }
+
       aside {
+        order: 2;
         position: static;
         height: auto;
       }
@@ -637,6 +642,198 @@
 
       .span-2 {
         grid-column: span 1;
+      }
+    }
+    @media (max-width: 760px) {
+      body {
+        background: #eef3ef;
+      }
+
+      aside {
+        padding: 18px 14px;
+      }
+
+      .brand {
+        margin-bottom: 16px;
+      }
+
+      .brand h1 {
+        font-size: 18px;
+      }
+
+      .segmented {
+        grid-template-columns: repeat(2, minmax(0, 1fr));
+      }
+
+      .segmented button {
+        min-height: 42px;
+      }
+
+      .filter-group {
+        margin-top: 12px;
+        padding-top: 12px;
+      }
+
+      .side-actions {
+        margin-top: 16px;
+      }
+
+      main {
+        padding: 16px 10px 28px;
+      }
+
+      .intro h2 {
+        font-size: 25px;
+        line-height: 1.25;
+      }
+
+      .intro p {
+        font-size: 14px;
+        line-height: 1.6;
+      }
+
+      .quick-stats {
+        grid-template-columns: repeat(2, minmax(0, 1fr));
+        gap: 8px;
+      }
+
+      .stat {
+        padding: 11px;
+      }
+
+      .stat b {
+        font-size: 22px;
+      }
+
+      .toolbar {
+        gap: 8px;
+      }
+
+      .toolbar select,
+      .primary-btn,
+      .search-box input {
+        width: 100%;
+      }
+
+      .month-lookup {
+        display: grid;
+        grid-template-columns: 1fr 1fr;
+        gap: 8px;
+        align-items: stretch;
+        margin-bottom: 12px;
+      }
+
+      .month-lookup label,
+      .month-lookup input,
+      .month-lookup .field-hint {
+        grid-column: 1 / -1;
+        width: 100%;
+      }
+
+      .layout {
+        gap: 12px;
+      }
+
+      .table-wrap {
+        background: transparent;
+        border: 0;
+        box-shadow: none;
+        overflow: visible;
+      }
+
+      tbody {
+        display: grid;
+        gap: 10px;
+      }
+
+      tbody tr {
+        background: var(--panel);
+        border: 1px solid var(--line);
+        border-radius: 8px;
+        box-shadow: 0 8px 22px rgba(24, 33, 31, 0.08);
+        padding: 12px;
+      }
+
+      tbody tr:hover {
+        background: var(--panel);
+      }
+
+      tbody td {
+        display: grid;
+        grid-template-columns: 76px minmax(0, 1fr);
+        gap: 9px;
+        align-items: start;
+        min-width: 0;
+        line-height: 1.5;
+      }
+
+      tbody td::before {
+        color: var(--muted);
+        content: "";
+        font-size: 12px;
+        font-weight: 900;
+        padding-top: 2px;
+      }
+
+      tbody td:nth-child(1)::before { content: "賽事"; }
+      tbody td:nth-child(2)::before { content: "類型"; }
+      tbody td:nth-child(3)::before { content: "地點"; }
+      tbody td:nth-child(4)::before { content: "日期"; }
+      tbody td:nth-child(5)::before { content: "報名"; }
+      tbody td:nth-child(6)::before { content: "距離"; }
+      tbody td:nth-child(7)::before { content: "行程"; }
+
+      .event-name,
+      .event-meta,
+      .distance-list,
+      .row-actions {
+        min-width: 0;
+      }
+
+      .event-name {
+        overflow-wrap: anywhere;
+      }
+
+      .row-actions {
+        justify-content: flex-start;
+      }
+
+      .planner {
+        padding: 14px;
+      }
+
+      .saved-item {
+        overflow-wrap: anywhere;
+      }
+
+      dialog {
+        width: calc(100% - 18px);
+      }
+
+      .modal-head,
+      .form-grid,
+      .modal-actions {
+        padding-left: 14px;
+        padding-right: 14px;
+      }
+
+      .modal-actions {
+        display: grid;
+        grid-template-columns: 1fr 1fr;
+      }
+    }
+
+    @media (max-width: 420px) {
+      tbody td {
+        grid-template-columns: 62px minmax(0, 1fr);
+      }
+
+      .quick-stats {
+        grid-template-columns: 1fr 1fr;
+      }
+
+      .month-lookup {
+        grid-template-columns: 1fr;
       }
     }
   </style>
